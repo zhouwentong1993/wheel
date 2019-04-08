@@ -9,7 +9,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-public class NIOServerServer01 {
+public class NIODemo {
 
     public static void main(String[] args) throws Exception{
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
@@ -43,6 +43,8 @@ public class NIOServerServer01 {
         // 将新接入的客户端连接注册在多路复用器上，监听读操作
         SelectionKey key = channel.register(selector, SelectionKey.OP_READ);
 
+        // 处理数据
+//        channel.read()
     }
 
 }
