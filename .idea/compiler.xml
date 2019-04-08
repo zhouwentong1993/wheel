@@ -9,9 +9,6 @@
         <module name="my_tomcat" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="my_tomcat" target="1.8" />
-      <module name="wheel" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>
