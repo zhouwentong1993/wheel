@@ -1,4 +1,4 @@
-package com.wentong.tomcat.bio;
+package com.wentong.example.bio;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

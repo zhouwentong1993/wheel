@@ -1,11 +1,12 @@
-package com.wentong.tomcat.bio;
-
-import com.wentong.tomcat.nio.ServerHandler;
+package com.wentong.example.bio;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class DemoSocketServer01 {
+/**
+ * 阻塞 io，每一个连接对应着一个线程，容易出现瓶颈。
+ */
+public class BIOSocketServer01 {
 
     public static void main(String[] args) throws Exception{
 

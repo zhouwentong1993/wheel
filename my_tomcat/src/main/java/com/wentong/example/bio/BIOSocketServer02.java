@@ -1,4 +1,4 @@
-package com.wentong.tomcat.bio;
+package com.wentong.example.bio;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class BIOSocketServer02 {
 
-    private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10, 20, 40, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10), new ThreadFactoryBuilder()
+    private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(100, 200, 40, TimeUnit.SECONDS, new ArrayBlockingQueue<>(1000), new ThreadFactoryBuilder()
             .setNameFormat("server-handle-pool-%d").build());
 
     public static void main(String[] args) throws Exception {

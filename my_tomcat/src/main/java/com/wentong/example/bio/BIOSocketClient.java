@@ -1,4 +1,4 @@
-package com.wentong.tomcat.bio;
+package com.wentong.example.bio;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.net.Socket;
 public class BIOSocketClient {
 
     public static void main(String[] args) throws Exception {
-        while (true) {
+//        while (true) {
             Socket socket = new Socket("127.0.0.1", 8888);
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(),true);
             printWriter.println("hello");
@@ -16,6 +16,6 @@ public class BIOSocketClient {
             System.out.println(bufferedReader.readLine());
             socket.close();
             printWriter.close();
-        }
+//        }
     }
 }
