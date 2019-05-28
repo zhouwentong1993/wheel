@@ -20,15 +20,16 @@ public class Request {
         return uri;
     }
 
-    public String parse() throws Exception{
+    public void parse() throws Exception{
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder requestBody = new StringBuilder(2048);
         String requestLine;
         while ((requestLine = bufferedReader.readLine()) != null) {
             requestBody.append(requestLine);
+            System.out.println(requestLine);
         }
         System.out.println(requestBody);
-        return parseUri(requestBody.toString());
+        this.uri = parseUri(requestBody.toString());
     }
 
 

@@ -1,30 +1,36 @@
 package com.wentong.howtomcatworks;
 
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class HTTPServer {
 
+    public static void main(String[] args) throws Exception {
+        HTTPServer httpServer = new HTTPServer();
+        httpServer.await();
+    }
 
-    public static void main(String[] args) throws Exception{
-        ServerSocket serverSocket = new ServerSocket(8088, 1, InetAddress.getByName("127.0.0.1"));
-        Socket socket = serverSocket.accept();
-        InputStream inputStream = socket.getInputStream();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-        String content;
+    private void await() throws Exception {
 
-        while ((content = bufferedReader.readLine()) != null) {
-            System.out.println(content);
+        Socket socket;
+        try (ServerSocket serverSocket = new ServerSocket(8088, 1, InetAddress.getByName("127.0.0.1"))) {
+            boolean shutdown = false;
+            while (!shutdown) {
+                socket = serverSocket.accept();
+                InputStream inputStream = socket.getInputStream();
+                Request request = new Request(inputStream);
+                request.parse();
+
+                Response response = new Response(socket.getOutputStream());
+                response.setRequest(request);
+                response.sendStaticResource();
+
+                shutdown = request.getUri().equals("/SHUTDOWN");
+
+            }
         }
-
-        socket.close();
-
-//        OutputStream outputStream = socket.getOutputStream();
-//        outputStream.write();
     }
 
 }

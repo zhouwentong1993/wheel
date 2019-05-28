@@ -17,7 +17,7 @@ public class Response {
     }
 
     public void sendStaticResource() throws Exception {
-        File file = new File(WEB_ROOT + request.getUri());
+        File file = new File(System.getProperty("user.dir") + File.separator + WEB_ROOT + File.separator + request.getUri());
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
              OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream)) {
             if (file.exists()) {
