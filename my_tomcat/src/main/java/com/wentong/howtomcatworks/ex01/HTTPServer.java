@@ -1,4 +1,4 @@
-package com.wentong.howtomcatworks;
+package com.wentong.howtomcatworks.ex01;
 
 import java.io.InputStream;
 import java.net.InetAddress;
@@ -26,9 +26,7 @@ public class HTTPServer {
                 Response response = new Response(socket.getOutputStream());
                 response.setRequest(request);
                 response.sendStaticResource();
-
                 shutdown = request.getUri().equals("/SHUTDOWN");
-
             }
         }
     }

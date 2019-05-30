@@ -1,4 +1,6 @@
-package com.wentong.howtomcatworks;
+package com.wentong.howtomcatworks.ex01;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -20,15 +22,18 @@ public class Request {
         return uri;
     }
 
-    public void parse() throws Exception{
+    public void parse() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder requestBody = new StringBuilder(2048);
-        String requestLine;
-        while ((requestLine = bufferedReader.readLine()) != null) {
-            requestBody.append(requestLine);
-            System.out.println(requestLine);
+        String body;
+        while (true) {
+            body = bufferedReader.readLine();
+            if (StringUtils.isNotBlank(body)) {
+                requestBody.append(body);
+            } else {
+                break;
+            }
         }
-        System.out.println(requestBody);
         this.uri = parseUri(requestBody.toString());
     }
 
@@ -44,6 +49,6 @@ public class Request {
                 return sourceUri.substring(firstSpace + 1, secondSpace);
             }
         }
-        throw new IllegalArgumentException("路径：" + sourceUri + "无法被解析");
+        return null;
     }
 }
