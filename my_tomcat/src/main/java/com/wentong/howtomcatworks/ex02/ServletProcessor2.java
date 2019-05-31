@@ -12,7 +12,7 @@ import java.net.URLStreamHandler;
 
 import static com.wentong.howtomcatworks.ex02.Constant.WEB_ROOT;
 
-public class ServletProcessor1 {
+public class ServletProcessor2 {
 
     public void process(Request request, Response response) {
         String requestUri = request.getUri();

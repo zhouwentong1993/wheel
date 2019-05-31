@@ -5,11 +5,10 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-@SuppressWarnings("ALL")
-public class HTTPServer {
+public class HTTPServer2 {
 
     public static void main(String[] args) throws Exception {
-        HTTPServer httpServer = new HTTPServer();
+        HTTPServer2 httpServer = new HTTPServer2();
         httpServer.await();
     }
 
