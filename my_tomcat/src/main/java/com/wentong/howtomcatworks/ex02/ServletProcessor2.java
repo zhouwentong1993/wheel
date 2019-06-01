@@ -6,6 +6,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLStreamHandler;
@@ -39,9 +40,11 @@ public class ServletProcessor2 {
         }
 
         try {
-            Servlet servlet = (Servlet) clazz.newInstance();
-            servlet.service((ServletRequest) request, (ServletResponse) response);
-        } catch (InstantiationException | ServletException | IOException | IllegalAccessException e) {
+            RequestFacade requestFacade = new RequestFacade(request);
+            ResponseFacade responseFacade = new ResponseFacade(response);
+            Servlet servlet = (Servlet) clazz.getDeclaredConstructor().newInstance();
+            servlet.service((ServletRequest) requestFacade, (ServletResponse) responseFacade);
+        } catch (InstantiationException | ServletException | IOException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
             e.printStackTrace();
         }
 

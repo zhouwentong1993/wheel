@@ -27,7 +27,7 @@ public class HTTPServer2 {
                 response.setRequest(request);
 
                 if (request.getUri().startsWith("/servlet")) {
-                    new ServletProcessor1().process(request,response);
+                    new ServletProcessor2().process(request,response);
                 } else {
                     new StaticResourceProcessor1().process(request, response);
                 }
