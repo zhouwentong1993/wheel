@@ -77,37 +77,37 @@ public class RequestFacade implements ServletRequest {
 
     @Override
     public String getProtocol() {
-        return null;
+        return servletRequest.getProtocol();
     }
 
     @Override
     public String getScheme() {
-        return null;
+        return servletRequest.getScheme();
     }
 
     @Override
     public String getServerName() {
-        return null;
+        return servletRequest.getServerName();
     }
 
     @Override
     public int getServerPort() {
-        return 0;
+        return servletRequest.getServerPort();
     }
 
     @Override
     public BufferedReader getReader() throws IOException {
-        return null;
+        return servletRequest.getReader();
     }
 
     @Override
     public String getRemoteAddr() {
-        return null;
+        return servletRequest.getRemoteAddr();
     }
 
     @Override
     public String getRemoteHost() {
-        return null;
+        return servletRequest.getRemoteHost();
     }
 
     @Override
@@ -137,17 +137,17 @@ public class RequestFacade implements ServletRequest {
 
     @Override
     public RequestDispatcher getRequestDispatcher(String path) {
-        return null;
+        return servletRequest.getRequestDispatcher(path);
     }
 
     @Override
     public String getRealPath(String path) {
-        return null;
+        return servletRequest.getRealPath(path);
     }
 
     @Override
     public int getRemotePort() {
-        return 0;
+        return servletRequest.getRemotePort();
     }
 
     @Override
