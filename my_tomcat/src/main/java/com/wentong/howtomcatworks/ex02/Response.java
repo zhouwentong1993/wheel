@@ -81,11 +81,6 @@ public class Response implements ServletResponse {
     }
 
     @Override
-    public void setContentLengthLong(long len) {
-
-    }
-
-    @Override
     public void setContentType(String type) {
 
     }
