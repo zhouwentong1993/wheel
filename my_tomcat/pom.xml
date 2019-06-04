@@ -23,6 +23,11 @@
             <version>3.7</version>
         </dependency>
         <dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>apache-jar-resource-bundle</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>25.1-jre</version>
@@ -33,15 +38,9 @@
             <version>2.5</version>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -56,6 +55,29 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-remote-resources-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>process</goal>
+                        </goals>
+                        <configuration>
+                            <resourceBundles>
+                                <!-- Will generate META-INF/DEPENDENCIES META-INF/LICENSE META-INF/NOTICE -->
+                                <resourceBundle>org.apache.apache.resources:apache-jar-resource-bundle:1.5-SNAPSHOT</resourceBundle>
+                                <!-- Will generate META-INF/DEPENDENCIES.txt META-INF/LICENSE.txt META-INF/NOTICE.txt -->
+                                <resourceBundle>org.apache.apache.resources:apache-jar-txt-resource-bundle:1.5-SNAPSHOT</resourceBundle>
+                                <!-- Will generate META-INF/DISCLAIMER  -->
+                                <resourceBundle>org.apache.apache.resources:apache-incubator-disclaimer-resource-bundle:1.2-SNAPSHOT</resourceBundle>
+                            </resourceBundles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 </project>

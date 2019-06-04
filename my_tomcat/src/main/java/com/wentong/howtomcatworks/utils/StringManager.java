@@ -51,7 +51,7 @@ public class StringManager {
     }
 
     private StringManager(String packageName, Locale locale) {
-        String bundleName = packageName + ".LocalStrings";
+        String bundleName = packageName + "LocalStrings";
         try {
             resourceBundle = ResourceBundle.getBundle(bundleName, Locale.JAPANESE,this.getClass().getClassLoader());
         } catch (MissingResourceException ex) {
@@ -71,7 +71,7 @@ public class StringManager {
     }
 
     public static void main(String[] args) {
-        StringManager stringManager = new StringManager("com.wentong.howtomcatworks.ex02", Locale.getDefault());
+        StringManager stringManager = new StringManager("", Locale.getDefault());
 //        StringManager stringManager = new StringManager("com.wentong.howtomcatworks.ex03", Locale.getDefault());
         String test = stringManager.getString("httpConnector.alreadyStarted");
         System.out.println(test);
