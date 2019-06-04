@@ -11,8 +11,9 @@ public class StringManager {
 
     private StringManager(String packageName) {
         try {
-            resourceBundle = ResourceBundle.getBundle(packageName + ".LocalStrings", Locale.getDefault());
+            resourceBundle = ResourceBundle.getBundle(packageName + ".LocalStrings", Locale.JAPAN);
         } catch (MissingResourceException e) {
+            System.out.println(e);
             ClassLoader cl = Thread.currentThread().getContextClassLoader();
             if (cl != null) {
                 try {
@@ -52,8 +53,9 @@ public class StringManager {
     private StringManager(String packageName, Locale locale) {
         String bundleName = packageName + ".LocalStrings";
         try {
-            resourceBundle = ResourceBundle.getBundle(bundleName, locale);
+            resourceBundle = ResourceBundle.getBundle(bundleName, Locale.JAPANESE,this.getClass().getClassLoader());
         } catch (MissingResourceException ex) {
+            System.out.println(ex);
             // Try from the current loader (that's the case for trusted apps)
             // Should only be required if using a TC5 style classloader structure
             // where common != shared != server
@@ -69,7 +71,8 @@ public class StringManager {
     }
 
     public static void main(String[] args) {
-        StringManager stringManager = new StringManager("com.wentong.howtomcatworks.ex03", Locale.getDefault());
+        StringManager stringManager = new StringManager("com.wentong.howtomcatworks.ex02", Locale.getDefault());
+//        StringManager stringManager = new StringManager("com.wentong.howtomcatworks.ex03", Locale.getDefault());
         String test = stringManager.getString("httpConnector.alreadyStarted");
         System.out.println(test);
     }
