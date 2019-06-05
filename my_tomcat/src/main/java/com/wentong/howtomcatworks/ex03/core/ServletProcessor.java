@@ -1,9 +1,12 @@
-package com.wentong.howtomcatworks.ex02;
+package com.wentong.howtomcatworks.ex03.core;
+
+import com.wentong.howtomcatworks.ex03.connector.http.HttpRequest;
+import com.wentong.howtomcatworks.ex03.connector.http.HttpResponse;
+import com.wentong.howtomcatworks.ex03.connector.http.RequestFacade;
+import com.wentong.howtomcatworks.ex03.connector.http.ResponseFacade;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -13,10 +16,11 @@ import java.net.URLStreamHandler;
 
 import static com.wentong.howtomcatworks.ex02.Constant.WEB_ROOT;
 
-public class ServletProcessor2 {
+// 普通的 Servlet 处理器
+public class ServletProcessor {
 
-    public void process(Request request, Response response) {
-        String requestUri = request.getUri();
+    public void process(HttpRequest request, HttpResponse response) {
+        String requestUri = request.getRequestURI();
         String servletName = requestUri.substring(requestUri.lastIndexOf('/') + 1);
         URLClassLoader urlClassLoader = null;
 
