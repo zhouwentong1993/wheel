@@ -14,6 +14,7 @@ import java.io.InputStream;
  * @author <a href="mailto:remm@apache.org">Remy Maucherat</a>
  * @deprecated
  */
+// 包装了 InputStream，实现了 HTTP 报文解析
 public class SocketInputStream extends InputStream {
 
 
