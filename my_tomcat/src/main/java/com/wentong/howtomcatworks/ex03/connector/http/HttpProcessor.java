@@ -3,7 +3,7 @@ package com.wentong.howtomcatworks.ex03.connector.http;
 
 import com.wentong.howtomcatworks.ex03.core.ServletProcessor;
 import com.wentong.howtomcatworks.ex03.core.StaticResourceProcessor;
-import com.wentong.howtomcatworks.org.apache.catalina.RequestUtil;
+import com.wentong.howtomcatworks.org.apache.catalina.util.RequestUtil;
 import com.wentong.howtomcatworks.utils.StringManager;
 
 import javax.servlet.ServletException;

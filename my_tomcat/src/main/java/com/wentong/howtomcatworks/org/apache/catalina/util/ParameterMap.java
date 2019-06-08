@@ -62,7 +62,7 @@
  */
 
 
-package com.wentong.howtomcatworks.org.apache.catalina;
+package com.wentong.howtomcatworks.org.apache.catalina.util;
 
 
 import com.wentong.howtomcatworks.utils.StringManager;
@@ -173,7 +173,7 @@ public final class ParameterMap extends HashMap {
      * The string manager for this package.
      */
     private static final StringManager sm =
-        StringManager.getManager("org.apache.catalina.util");
+        StringManager.getManager("com.wentong.howtomcatworks.org.apache.catalina.util");
 
 
     // --------------------------------------------------------- Public Methods

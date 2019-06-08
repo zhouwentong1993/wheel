@@ -61,7 +61,7 @@
  *
  */
 
-package com.wentong.howtomcatworks.org.apache.catalina;
+package com.wentong.howtomcatworks.org.apache.catalina.util;
 
 import javax.servlet.http.Cookie;
 import java.text.FieldPosition;

@@ -11,7 +11,7 @@ public class StringManager {
 
     private StringManager(String packageName) {
         try {
-            resourceBundle = ResourceBundle.getBundle(packageName + ".LocalStrings", Locale.JAPAN);
+            resourceBundle = ResourceBundle.getBundle(packageName + ".LocalStrings");
         } catch (MissingResourceException e) {
             System.out.println(e);
             ClassLoader cl = Thread.currentThread().getContextClassLoader();

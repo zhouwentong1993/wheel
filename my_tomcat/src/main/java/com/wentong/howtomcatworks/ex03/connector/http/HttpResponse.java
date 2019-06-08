@@ -3,7 +3,7 @@ package com.wentong.howtomcatworks.ex03.connector.http;
 
 import com.wentong.howtomcatworks.ex03.connector.ResponseStream;
 import com.wentong.howtomcatworks.ex03.connector.ResponseWriter;
-import com.wentong.howtomcatworks.org.apache.catalina.CookieTools;
+import com.wentong.howtomcatworks.org.apache.catalina.util.CookieTools;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;

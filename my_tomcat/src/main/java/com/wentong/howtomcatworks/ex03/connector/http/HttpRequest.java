@@ -7,9 +7,9 @@ package com.wentong.howtomcatworks.ex03.connector.http;
  */
 
 import com.wentong.howtomcatworks.ex03.connector.RequestStream;
-import com.wentong.howtomcatworks.org.apache.catalina.Enumerator;
-import com.wentong.howtomcatworks.org.apache.catalina.ParameterMap;
-import com.wentong.howtomcatworks.org.apache.catalina.RequestUtil;
+import com.wentong.howtomcatworks.org.apache.catalina.util.Enumerator;
+import com.wentong.howtomcatworks.org.apache.catalina.util.ParameterMap;
+import com.wentong.howtomcatworks.org.apache.catalina.util.RequestUtil;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;

@@ -1,7 +1,7 @@
 /*
- * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/apache/catalina/util/Enumerator.java,v 1.2 2001/07/22 20:25:13 pier Exp $
- * $Revision: 1.2 $
- * $Date: 2001/07/22 20:25:13 $
+ * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/apache/catalina/util/Base64.java,v 1.4 2001/09/04 21:49:55 craigmcc Exp $
+ * $Revision: 1.4 $
+ * $Date: 2001/09/04 21:49:55 $
  *
  * ====================================================================
  *
@@ -61,107 +61,74 @@
  *
  */
 
+package com.wentong.howtomcatworks.org.apache.catalina.util;
 
-package com.wentong.howtomcatworks.org.apache.catalina;
+import com.wentong.howtomcatworks.utils.StringManager;
 
-
-import java.util.*;
-
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.TimeZone;
 
 /**
- * Adapter class that wraps an <code>Enumeration</code> around a Java2
- * collection classes object <code>Iterator</code> so that existing APIs
- * returning Enumerations can easily run on top of the new collections.
- * Constructors are provided to easliy create such wrappers.
+ *  Common place for date utils.
  *
- * @author Craig R. McClanahan
- * @version $Revision: 1.2 $ $Date: 2001/07/22 20:25:13 $
+ * @author dac@eng.sun.com
+ * @author Jason Hunter [jch@eng.sun.com]
+ * @author James Todd [gonzo@eng.sun.com]
+ * @author Costin Manolache
  */
+public class DateTool {
 
-public final class Enumerator implements Enumeration {
+    private static StringManager sm =
+        StringManager.getManager("com.wentong.howtomcatworks.org.apache.catalina.util");
 
-
-    // ----------------------------------------------------------- Constructors
-
-
-    /**
-     * Return an Enumeration over the values of the specified Collection.
-     *
-     * @param collection Collection whose values should be enumerated
+    /** US locale - all HTTP dates are in english
      */
-    public Enumerator(Collection collection) {
+    public final static Locale LOCALE_US = Locale.US;
 
-        this(collection.iterator());
+    /** GMT timezone - all HTTP dates are on GMT
+     */
+    public final static TimeZone GMT_ZONE = TimeZone.getTimeZone("GMT");
 
+    /** format for RFC 1123 date string -- "Sun, 06 Nov 1994 08:49:37 GMT"
+     */
+    public final static String RFC1123_PATTERN =
+        "EEE, dd MMM yyyyy HH:mm:ss z";
+
+    // format for RFC 1036 date string -- "Sunday, 06-Nov-94 08:49:37 GMT"
+    private final static String rfc1036Pattern =
+        "EEEEEEEEE, dd-MMM-yy HH:mm:ss z";
+
+    // format for C asctime() date string -- "Sun Nov  6 08:49:37 1994"
+    private final static String asctimePattern =
+        "EEE MMM d HH:mm:ss yyyyy";
+
+    /** Pattern used for old cookies
+     */
+    public final static String OLD_COOKIE_PATTERN = "EEE, dd-MMM-yyyy HH:mm:ss z";
+
+    /** DateFormat to be used to format dates
+     */
+    public final static DateFormat rfc1123Format =
+        new SimpleDateFormat(RFC1123_PATTERN, LOCALE_US);
+
+    /** DateFormat to be used to format old netscape cookies
+     */
+    public final static DateFormat oldCookieFormat =
+        new SimpleDateFormat(OLD_COOKIE_PATTERN, LOCALE_US);
+
+    public final static DateFormat rfc1036Format =
+        new SimpleDateFormat(rfc1036Pattern, LOCALE_US);
+
+    public final static DateFormat asctimeFormat =
+        new SimpleDateFormat(asctimePattern, LOCALE_US);
+
+    static {
+        rfc1123Format.setTimeZone(GMT_ZONE);
+        oldCookieFormat.setTimeZone(GMT_ZONE);
+        rfc1036Format.setTimeZone(GMT_ZONE);
+        asctimeFormat.setTimeZone(GMT_ZONE);
     }
-
-
-    /**
-     * Return an Enumeration over the values returned by the
-     * specified Iterator.
-     *
-     * @param iterator Iterator to be wrapped
-     */
-    public Enumerator(Iterator iterator) {
-
-        super();
-        this.iterator = iterator;
-
-    }
-
-
-    /**
-     * Return an Enumeration over the values of the specified Map.
-     *
-     * @param map Map whose values should be enumerated
-     */
-    public Enumerator(Map map) {
-
-        this(map.values().iterator());
-
-    }
-
-
-    // ----------------------------------------------------- Instance Variables
-
-
-    /**
-     * The <code>Iterator</code> over which the <code>Enumeration</code>
-     * represented by this class actually operates.
-     */
-    private Iterator iterator = null;
-
-
-    // --------------------------------------------------------- Public Methods
-
-
-    /**
-     * Tests if this enumeration contains more elements.
-     *
-     * @return <code>true</code> if and only if this enumeration object
-     *  contains at least one more element to provide, <code>false</code>
-     *  otherwise
-     */
-    public boolean hasMoreElements() {
-
-        return (iterator.hasNext());
-
-    }
-
-
-    /**
-     * Returns the next element of this enumeration if this enumeration
-     * has at least one more element to provide.
-     *
-     * @return the next element of this enumeration
-     *
-     * @exception NoSuchElementException if no more elements exist
-     */
-    public Object nextElement() throws NoSuchElementException {
-
-        return (iterator.next());
-
-    }
-
 
 }
