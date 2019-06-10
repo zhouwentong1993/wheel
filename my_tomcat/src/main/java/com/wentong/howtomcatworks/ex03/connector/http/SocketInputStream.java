@@ -137,13 +137,16 @@ public class SocketInputStream extends InputStream {
         do { // Skipping CR or LF
             try {
                 chr = read();
+                System.out.println((char) chr);
             } catch (IOException e) {
                 chr = -1;
             }
         } while ((chr == CR) || (chr == LF));
-        if (chr == -1)
+        if (chr == -1) {
+            System.out.println("pos:" + pos + "count:" + count);
             throw new EOFException
-                (sm.getString("requestStream.readline.error"));
+                    (sm.getString("requestStream.readline.error"));
+        }
         pos--;
 
         // Reading the method name
