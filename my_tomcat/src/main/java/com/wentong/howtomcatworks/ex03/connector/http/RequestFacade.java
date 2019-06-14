@@ -1,7 +1,5 @@
 package com.wentong.howtomcatworks.ex03.connector.http;
 
-import com.wentong.howtomcatworks.ex02.Request;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
