@@ -1,5 +1,5 @@
 /*
- * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/apache/catalina/util/Base64.java,v 1.4 2001/09/04 21:49:55 craigmcc Exp $
+ * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/org.apache/catalina/util/Base64.java,v 1.4 2001/09/04 21:49:55 craigmcc Exp $
  * $Revision: 1.4 $
  * $Date: 2001/09/04 21:49:55 $
  *
@@ -32,7 +32,7 @@
  * 4. The names "The Jakarta Project", "Tomcat", and "Apache Software
  *    Foundation" must not be used to endorse or promote products derived
  *    from this software without prior written permission. For written
- *    permission, please contact apache@apache.org.
+ *    permission, please contact org.apache@org.apache.org.
  *
  * 5. Products derived from this software may not be called "Apache"
  *    nor may "Apache" appear in their names without prior written
@@ -81,7 +81,7 @@ import java.util.TimeZone;
 public class DateTool {
 
     private static StringManager sm =
-        StringManager.getManager("com.wentong.howtomcatworks.org.apache.catalina.util");
+        StringManager.getManager("com.wentong.howtomcatworks.org.org.apache.catalina.util");
 
     /** US locale - all HTTP dates are in english
      */

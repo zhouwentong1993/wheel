@@ -1,7 +1,7 @@
 package com.wentong.howtomcatworks.ex03.connector.http;
 
-/* this class copies methods from org.apache.catalina.connector.HttpRequestBase
- *  and org.apache.catalina.connector.http.HttpRequestImpl.
+/* this class copies methods from org.org.apache.catalina.connector.HttpRequestBase
+ *  and org.org.apache.catalina.connector.http.HttpRequestImpl.
  *  The HttpRequestImpl class employs a pool of HttpHeader objects for performance
  *  These two classes will be explained in Chapter 4.
  */

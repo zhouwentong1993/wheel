@@ -31,8 +31,8 @@ public class HttpProcessor {
     }
 
     public void process(Socket socket) {
-        SocketInputStream socketInputStream = null;
-        OutputStream outputStream = null;
+        SocketInputStream socketInputStream;
+        OutputStream outputStream;
         try {
             socketInputStream = new SocketInputStream(socket.getInputStream(), 2048);
             outputStream = socket.getOutputStream();
@@ -62,17 +62,23 @@ public class HttpProcessor {
         }
     }
 
+    /**
+     * 解析 HttpRequest，整体拼装细节
+     */
     private void parseRequest(SocketInputStream input, OutputStream output)
             throws IOException, ServletException {
 
         // Parse the incoming request line
+        // 解析请求行
         input.readRequestLine(httpRequestLine);
+        // 获取 request method
         String method =
                 new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
-        String uri = null;
+        String uri;
         String protocol = new String(httpRequestLine.protocol, 0, httpRequestLine.protocolEnd);
 
         // Validate the incoming request line
+        // 简单校验请求合法性，要有请求方法，url 长度要合法
         if (method.length() < 1) {
             throw new ServletException("Missing HTTP request method");
         } else if (httpRequestLine.uriEnd < 1) {
@@ -128,6 +134,7 @@ public class HttpProcessor {
         String normalizedUri = normalize(uri);
 
         // Set the corresponding request properties
+        // 设置成关联的 HttpRequest 对象，这样就能和 Servlet 挂上钩了
         ((HttpRequest) httpRequest).setMethod(method);
         httpRequest.setProtocol(protocol);
         if (normalizedUri != null) {
@@ -222,7 +229,7 @@ public class HttpProcessor {
 
     /**
      * This method is the simplified version of the similar method in
-     * org.apache.catalina.connector.http.HttpProcessor.
+     * org.org.apache.catalina.connector.http.HttpProcessor.
      * However, this method only parses some "easy" headers, such as
      * "cookie", "content-length", and "content-type", and ignore other headers.
      *
@@ -230,11 +237,11 @@ public class HttpProcessor {
      * @throws IOException      if an input/output error occurs
      * @throws ServletException if a parsing error occurs
      */
+    // 将解析到的 header 对应地映射到 HTTPRequest 类上。
     private void parseHeaders(SocketInputStream input)
             throws IOException, ServletException {
         while (true) {
             HttpHeader header = new HttpHeader();
-            ;
 
             // Read the next header
             input.readHeader(header);

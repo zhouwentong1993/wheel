@@ -1,5 +1,5 @@
 /*
- * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/apache/catalina/util/ParameterMap.java,v 1.2 2001/07/22 20:25:13 pier Exp $
+ * $Header: /home/cvs/jakarta-tomcat-4.0/catalina/src/share/org/org.apache/catalina/util/ParameterMap.java,v 1.2 2001/07/22 20:25:13 pier Exp $
  * $Revision: 1.2 $
  * $Date: 2001/07/22 20:25:13 $
  *
@@ -32,7 +32,7 @@
  * 4. The names "The Jakarta Project", "Tomcat", and "Apache Software
  *    Foundation" must not be used to endorse or promote products derived
  *    from this software without prior written permission. For written
- *    permission, please contact apache@apache.org.
+ *    permission, please contact org.apache@org.apache.org.
  *
  * 5. Products derived from this software may not be called "Apache"
  *    nor may "Apache" appear in their names without prior written
@@ -173,7 +173,7 @@ public final class ParameterMap extends HashMap {
      * The string manager for this package.
      */
     private static final StringManager sm =
-        StringManager.getManager("com.wentong.howtomcatworks.org.apache.catalina.util");
+        StringManager.getManager("com.wentong.howtomcatworks.org.org.apache.catalina.util");
 
 
     // --------------------------------------------------------- Public Methods

@@ -1,19 +1,103 @@
 package com.wentong.howtomcatworks.ex03.connector.http;
 
-import com.wentong.howtomcatworks.ex02.Response;
-
 import javax.servlet.ServletOutputStream;
-import javax.servlet.ServletResponse;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Locale;
 
-public class ResponseFacade implements ServletResponse {
+public class ResponseFacade implements HttpServletResponse {
 
-    private ServletResponse servletResponse;
+    private HttpServletResponse servletResponse;
 
     public ResponseFacade(HttpResponse response) {
         this.servletResponse = response;
+    }
+
+    @Override
+    public void addCookie(Cookie cookie) {
+        servletResponse.addCookie(cookie);
+    }
+
+    @Override
+    public boolean containsHeader(String s) {
+        return servletResponse.containsHeader(s);
+    }
+
+    @Override
+    public String encodeURL(String s) {
+        return servletResponse.encodeURL(s);
+    }
+
+    @Override
+    public String encodeRedirectURL(String s) {
+        return servletResponse.encodeRedirectURL(s);
+    }
+
+    @Override
+    public String encodeUrl(String s) {
+        return servletResponse.encodeURL(s);
+    }
+
+    @Override
+    public String encodeRedirectUrl(String s) {
+        return servletResponse.encodeRedirectURL(s);
+    }
+
+    @Override
+    public void sendError(int i, String s) throws IOException {
+        servletResponse.sendError(i, s);
+    }
+
+    @Override
+    public void sendError(int i) throws IOException {
+        servletResponse.sendError(i);
+    }
+
+    @Override
+    public void sendRedirect(String s) throws IOException {
+        servletResponse.sendRedirect(s);
+    }
+
+    @Override
+    public void setDateHeader(String s, long l) {
+        servletResponse.setDateHeader(s, l);
+    }
+
+    @Override
+    public void addDateHeader(String s, long l) {
+        servletResponse.addDateHeader(s, l);
+    }
+
+    @Override
+    public void setHeader(String s, String s1) {
+        servletResponse.setHeader(s, s1);
+    }
+
+    @Override
+    public void addHeader(String s, String s1) {
+        servletResponse.addHeader(s, s1);
+    }
+
+    @Override
+    public void setIntHeader(String s, int i) {
+        servletResponse.setIntHeader(s, i);
+    }
+
+    @Override
+    public void addIntHeader(String s, int i) {
+        servletResponse.addIntHeader(s, i);
+    }
+
+    @Override
+    public void setStatus(int i) {
+        servletResponse.setStatus(i);
+    }
+
+    @Override
+    public void setStatus(int i, String s) {
+        servletResponse.setStatus(i, s);
     }
 
     @Override
