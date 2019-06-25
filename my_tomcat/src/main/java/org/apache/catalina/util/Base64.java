@@ -86,7 +86,7 @@ public final class  Base64
     static private final byte PAD                = (byte) '=';
     static private byte [] base64Alphabet       = new byte[BASELENGTH];
     static private byte [] lookUpBase64Alphabet = new byte[LOOKUPLENGTH];
-    //static private final Log log = LogSource.getInstance("org.org.apache.commons.util.Base64");
+    //static private final Log log = LogSource.getInstance("org.apache.commons.util.Base64");
 
     static
     {

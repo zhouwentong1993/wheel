@@ -44,7 +44,7 @@ final class StandardWrapperValve
      * The descriptive information related to this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardWrapperValve/1.0";
+        "org.apache.catalina.core.StandardWrapperValve/1.0";
 
 
     /**

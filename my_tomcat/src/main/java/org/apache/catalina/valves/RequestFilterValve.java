@@ -148,7 +148,7 @@ public abstract class RequestFilterValve
      * The descriptive information related to this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.valves.RequestFilterValve/1.0";
+        "org.apache.catalina.valves.RequestFilterValve/1.0";
 
 
     /**

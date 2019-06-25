@@ -175,7 +175,7 @@ public abstract class AuthenticatorBase
      * Descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.authenticator.AuthenticatorBase/1.0";
+        "org.apache.catalina.authenticator.AuthenticatorBase/1.0";
 
 
     /**
@@ -1046,7 +1046,7 @@ public abstract class AuthenticatorBase
             throw new LifecycleException
                 (sm.getString("authenticator.alreadyStarted"));
         lifecycle.fireLifecycleEvent(START_EVENT, null);
-        if ("org.org.apache.catalina.core.StandardContext".equals
+        if ("org.apache.catalina.core.StandardContext".equals
             (context.getClass().getName())) {
             try {
                 Class paramTypes[] = new Class[0];

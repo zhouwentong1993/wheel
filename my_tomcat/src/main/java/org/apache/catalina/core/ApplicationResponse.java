@@ -76,7 +76,7 @@ import javax.servlet.ServletResponseWrapper;
  * that transforms an application response object (which might be the original
  * one passed to a servlet, or might be based on the 2.3
  * <code>javax.servlet.ServletResponseWrapper</code> class)
- * back into an internal <code>org.org.apache.catalina.Response</code>.
+ * back into an internal <code>org.apache.catalina.Response</code>.
  * <p>
  * <strong>WARNING</strong>:  Due to Java's lack of support for multiple
  * inheritance, all of the logic in <code>ApplicationResponse</code> is

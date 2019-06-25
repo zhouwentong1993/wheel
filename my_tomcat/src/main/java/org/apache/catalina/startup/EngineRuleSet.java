@@ -135,17 +135,17 @@ public class EngineRuleSet extends RuleSetBase {
     public void addRuleInstances(Digester digester) {
 
         digester.addObjectCreate(prefix + "Engine",
-                                 "org.org.apache.catalina.core.StandardEngine",
+                                 "org.apache.catalina.core.StandardEngine",
                                  "className");
         digester.addSetProperties(prefix + "Engine");
         digester.addRule(prefix + "Engine",
                          new LifecycleListenerRule
                          (digester,
-                          "org.org.apache.catalina.startup.EngineConfig",
+                          "org.apache.catalina.startup.EngineConfig",
                           "engineConfigClass"));
         digester.addSetNext(prefix + "Engine",
                             "setContainer",
-                            "org.org.apache.catalina.Container");
+                            "org.apache.catalina.Container");
 
         digester.addObjectCreate(prefix + "Engine/Listener",
                                  null, // MUST be specified in the element
@@ -153,7 +153,7 @@ public class EngineRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Engine/Listener");
         digester.addSetNext(prefix + "Engine/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         digester.addObjectCreate(prefix + "Engine/Logger",
                                  null, // MUST be specified in the element
@@ -161,7 +161,7 @@ public class EngineRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Engine/Logger");
         digester.addSetNext(prefix + "Engine/Logger",
                             "setLogger",
-                            "org.org.apache.catalina.Logger");
+                            "org.apache.catalina.Logger");
 
         digester.addObjectCreate(prefix + "Engine/Realm",
                                  null, // MUST be specified in the element
@@ -169,7 +169,7 @@ public class EngineRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Engine/Realm");
         digester.addSetNext(prefix + "Engine/Realm",
                             "setRealm",
-                            "org.org.apache.catalina.Realm");
+                            "org.apache.catalina.Realm");
 
         digester.addObjectCreate(prefix + "Engine/Valve",
                                  null, // MUST be specified in the element
@@ -177,7 +177,7 @@ public class EngineRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Engine/Valve");
         digester.addSetNext(prefix + "Engine/Valve",
                             "addValve",
-                            "org.org.apache.catalina.Valve");
+                            "org.apache.catalina.Valve");
 
     }
 

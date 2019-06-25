@@ -205,7 +205,7 @@ public class Embedded implements Lifecycle {
      * Descriptive information about this server implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.startup.Embedded/1.0";
+        "org.apache.catalina.startup.Embedded/1.0";
 
 
     /**
@@ -242,7 +242,7 @@ public class Embedded implements Lifecycle {
      * will be used instead.
      */
     protected String socketFactory =
-        "org.org.apache.catalina.net.SSLSocketFactory";
+        "org.apache.catalina.net.SSLSocketFactory";
 
 
     /**
@@ -517,7 +517,7 @@ public class Embedded implements Lifecycle {
             if (protocol.equals("ajp")) {
                 IntrospectionUtils.setProperty
                     (connector, "protocolHandlerClassName",
-                     "org.org.apache.jk.server.JkCoyoteHandler");
+                     "org.apache.jk.server.JkCoyoteHandler");
             } else if (protocol.equals("https")) {
                 connector.setScheme("https");
                 connector.setSecure(true);
@@ -963,7 +963,7 @@ public class Embedded implements Lifecycle {
             System.setProperty("catalina.useNaming", "false");
         } else {
             System.setProperty("catalina.useNaming", "true");
-            String value = "org.org.apache.naming";
+            String value = "org.apache.naming";
             String oldValue =
                 System.getProperty(javax.naming.Context.URL_PKG_PREFIXES);
             if (oldValue != null) {
@@ -971,7 +971,7 @@ public class Embedded implements Lifecycle {
             }
             System.setProperty(javax.naming.Context.URL_PKG_PREFIXES, value);
             System.setProperty(javax.naming.Context.INITIAL_CONTEXT_FACTORY,
-                               "org.org.apache.naming.java.javaURLContextFactory");
+                               "org.apache.naming.java.javaURLContextFactory");
         }
 
         // Start our defined Engines first

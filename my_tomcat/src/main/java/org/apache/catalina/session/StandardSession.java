@@ -89,7 +89,7 @@ import java.util.Iterator;
  * <b>IMPLEMENTATION NOTE</b>:  An instance of this class represents both the
  * internal (Session) and application level (HttpSession) view of the session.
  * However, because the class itself is not declared public, Java logic outside
- * of the <code>org.org.apache.catalina.session</code> package cannot cast an
+ * of the <code>org.apache.catalina.session</code> package cannot cast an
  * HttpSession view of this instance back to a Session view.
  * <p>
  * <b>IMPLEMENTATION NOTE</b>:  If you add fields to this class, you must
@@ -152,7 +152,7 @@ class StandardSession
     /**
      * The <code>java.lang.Method</code> for the
      * <code>fireContainerEvent()</code> method of the
-     * <code>org.org.apache.catalina.core.StandardContext</code> method,
+     * <code>org.apache.catalina.core.StandardContext</code> method,
      * if our Context implementation is of this class.  This value is
      * computed dynamically the first time it is needed, or after
      * a session reload (since it is declared transient).
@@ -1430,7 +1430,7 @@ class StandardSession
 
     /**
      * Fire container events if the Context implementation is the
-     * <code>org.org.apache.catalina.core.StandardContext</code>.
+     * <code>org.apache.catalina.core.StandardContext</code>.
      *
      * @param context Context for which to fire events
      * @param type Event type
@@ -1442,7 +1442,7 @@ class StandardSession
                                     String type, Object data)
         throws Exception {
 
-        if (!"org.org.apache.catalina.core.StandardContext".equals
+        if (!"org.apache.catalina.core.StandardContext".equals
             (context.getClass().getName())) {
             return; // Container events are not supported
         }

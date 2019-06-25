@@ -77,7 +77,7 @@ import javax.management.RuntimeOperationsException;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.core.StandardHost</code> component.</p>
+ * <code>org.apache.catalina.core.StandardHost</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.5 $ $Date: 2002/03/08 22:01:08 $

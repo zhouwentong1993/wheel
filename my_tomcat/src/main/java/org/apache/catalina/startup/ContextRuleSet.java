@@ -139,11 +139,11 @@ public class ContextRuleSet extends RuleSetBase {
 
         if (!isDefaultContext()) {
             digester.addObjectCreate(prefix + "Context",
-                                     "org.org.apache.catalina.core.StandardContext",
+                                     "org.apache.catalina.core.StandardContext",
                                      "className");
         } else {
             digester.addObjectCreate(prefix + "Context",
-                                     "org.org.apache.catalina.core.StandardDefaultContext",
+                                     "org.apache.catalina.core.StandardDefaultContext",
                                      "className");
         }
         digester.addSetProperties(prefix + "Context");
@@ -153,15 +153,15 @@ public class ContextRuleSet extends RuleSetBase {
             digester.addRule(prefix + "Context",
                              new LifecycleListenerRule
                                  (digester,
-                                  "org.org.apache.catalina.startup.ContextConfig",
+                                  "org.apache.catalina.startup.ContextConfig",
                                   "configClass"));
             digester.addSetNext(prefix + "Context",
                                 "addChild",
-                                "org.org.apache.catalina.Container");
+                                "org.apache.catalina.Container");
         } else {
             digester.addSetNext(prefix + "Context",
                                 "addDefaultContext",
-                                "org.org.apache.catalina.DefaultContext");
+                                "org.apache.catalina.DefaultContext");
         }
 
         digester.addCallMethod(prefix + "Context/InstanceListener",
@@ -173,17 +173,17 @@ public class ContextRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Context/Listener");
         digester.addSetNext(prefix + "Context/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         digester.addRule(prefix + "Context/Loader",
                          new CreateLoaderRule
                              (digester,
-                              "org.org.apache.catalina.loader.WebappLoader",
+                              "org.apache.catalina.loader.WebappLoader",
                               "className"));
         digester.addSetProperties(prefix + "Context/Loader");
         digester.addSetNext(prefix + "Context/Loader",
                             "setLoader",
-                            "org.org.apache.catalina.Loader");
+                            "org.apache.catalina.Loader");
 
         digester.addObjectCreate(prefix + "Context/Logger",
                                  null, // MUST be specified in the element
@@ -191,15 +191,15 @@ public class ContextRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Context/Logger");
         digester.addSetNext(prefix + "Context/Logger",
                             "setLogger",
-                            "org.org.apache.catalina.Logger");
+                            "org.apache.catalina.Logger");
 
         digester.addObjectCreate(prefix + "Context/Manager",
-                                 "org.org.apache.catalina.session.StandardManager",
+                                 "org.apache.catalina.session.StandardManager",
                                  "className");
         digester.addSetProperties(prefix + "Context/Manager");
         digester.addSetNext(prefix + "Context/Manager",
                             "setManager",
-                            "org.org.apache.catalina.Manager");
+                            "org.apache.catalina.Manager");
 
         digester.addObjectCreate(prefix + "Context/Manager/Store",
                                  null, // MUST be specified in the element
@@ -207,14 +207,14 @@ public class ContextRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Context/Manager/Store");
         digester.addSetNext(prefix + "Context/Manager/Store",
                             "setStore",
-                            "org.org.apache.catalina.Store");
+                            "org.apache.catalina.Store");
 
         digester.addObjectCreate(prefix + "Context/Parameter",
-                                 "org.org.apache.catalina.deploy.ApplicationParameter");
+                                 "org.apache.catalina.deploy.ApplicationParameter");
         digester.addSetProperties(prefix + "Context/Parameter");
         digester.addSetNext(prefix + "Context/Parameter",
                             "addApplicationParameter",
-                            "org.org.apache.catalina.deploy.ApplicationParameter");
+                            "org.apache.catalina.deploy.ApplicationParameter");
 
         digester.addObjectCreate(prefix + "Context/Realm",
                                  null, // MUST be specified in the element
@@ -222,17 +222,17 @@ public class ContextRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Context/Realm");
         digester.addSetNext(prefix + "Context/Realm",
                             "setRealm",
-                            "org.org.apache.catalina.Realm");
+                            "org.apache.catalina.Realm");
 
         digester.addObjectCreate(prefix + "Context/ResourceLink",
-                                 "org.org.apache.catalina.deploy.ContextResourceLink");
+                                 "org.apache.catalina.deploy.ContextResourceLink");
         digester.addSetProperties(prefix + "Context/ResourceLink");
         digester.addSetNext(prefix + "Context/ResourceLink",
                             "addResourceLink",
-                            "org.org.apache.catalina.deploy.ContextResourceLink");
+                            "org.apache.catalina.deploy.ContextResourceLink");
 
         digester.addObjectCreate(prefix + "Context/Resources",
-                                 "org.org.apache.naming.resources.FileDirContext",
+                                 "org.apache.naming.resources.FileDirContext",
                                  "className");
         digester.addSetProperties(prefix + "Context/Resources");
         digester.addSetNext(prefix + "Context/Resources",
@@ -245,7 +245,7 @@ public class ContextRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Context/Valve");
         digester.addSetNext(prefix + "Context/Valve",
                             "addValve",
-                            "org.org.apache.catalina.Valve");
+                            "org.apache.catalina.Valve");
 
         digester.addCallMethod(prefix + "Context/WrapperLifecycle",
                                "addWrapperLifecycle", 0);

@@ -61,7 +61,7 @@
 package org.apache.catalina.session;
 
 /**
- * Manifest constants for the <code>org.org.apache.catalina.session</code>
+ * Manifest constants for the <code>org.apache.catalina.session</code>
  * package.
  *
  * @author Craig R. McClanahan
@@ -69,6 +69,6 @@ package org.apache.catalina.session;
 
 public class Constants {
 
-    public static final String Package = "org.org.apache.catalina.session";
+    public static final String Package = "org.apache.catalina.session";
 
 }

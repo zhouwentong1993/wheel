@@ -93,13 +93,13 @@ public final class UserConfig
     /**
      * The Java class name of the Context configuration class we should use.
      */
-    private String configClass = "org.org.apache.catalina.startup.ContextConfig";
+    private String configClass = "org.apache.catalina.startup.ContextConfig";
 
 
     /**
      * The Java class name of the Context implementation we should use.
      */
-    private String contextClass = "org.org.apache.catalina.core.StandardContext";
+    private String contextClass = "org.apache.catalina.core.StandardContext";
 
 
     /**
@@ -137,7 +137,7 @@ public final class UserConfig
      * The Java class name of the user database class we should use.
      */
     private String userClass =
-        "org.org.apache.catalina.startup.PasswdUserDatabase";
+        "org.apache.catalina.startup.PasswdUserDatabase";
 
 
     // ------------------------------------------------------------- Properties

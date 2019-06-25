@@ -71,6 +71,6 @@ package org.apache.naming;
 
 public final class Constants {
 
-    public static final String Package = "org.org.apache.naming";
+    public static final String Package = "org.apache.naming";
 
 }

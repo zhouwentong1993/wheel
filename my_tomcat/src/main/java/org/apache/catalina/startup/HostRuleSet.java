@@ -132,7 +132,7 @@ public class HostRuleSet extends RuleSetBase {
     public void addRuleInstances(Digester digester) {
 
         digester.addObjectCreate(prefix + "Host",
-                                 "org.org.apache.catalina.core.StandardHost",
+                                 "org.apache.catalina.core.StandardHost",
                                  "className");
         digester.addSetProperties(prefix + "Host");
         digester.addRule(prefix + "Host",
@@ -140,11 +140,11 @@ public class HostRuleSet extends RuleSetBase {
         digester.addRule(prefix + "Host",
                          new LifecycleListenerRule
                          (digester,
-                          "org.org.apache.catalina.startup.HostConfig",
+                          "org.apache.catalina.startup.HostConfig",
                           "hostConfigClass"));
         digester.addSetNext(prefix + "Host",
                             "addChild",
-                            "org.org.apache.catalina.Container");
+                            "org.apache.catalina.Container");
 
         digester.addCallMethod(prefix + "Host/Alias",
                                "addAlias", 0);
@@ -155,7 +155,7 @@ public class HostRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Host/Cluster");
         digester.addSetNext(prefix + "Host/Cluster",
                             "addCluster",
-                            "org.org.apache.catalina.Cluster");
+                            "org.apache.catalina.Cluster");
 
         digester.addObjectCreate(prefix + "Host/Listener",
                                  null, // MUST be specified in the element
@@ -163,7 +163,7 @@ public class HostRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Host/Listener");
         digester.addSetNext(prefix + "Host/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         digester.addObjectCreate(prefix + "Host/Logger",
                                  null, // MUST be specified in the element
@@ -171,7 +171,7 @@ public class HostRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Host/Logger");
         digester.addSetNext(prefix + "Host/Logger",
                             "setLogger",
-                            "org.org.apache.catalina.Logger");
+                            "org.apache.catalina.Logger");
 
         digester.addObjectCreate(prefix + "Host/Realm",
                                  null, // MUST be specified in the element
@@ -179,7 +179,7 @@ public class HostRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Host/Realm");
         digester.addSetNext(prefix + "Host/Realm",
                             "setRealm",
-                            "org.org.apache.catalina.Realm");
+                            "org.apache.catalina.Realm");
 
         digester.addObjectCreate(prefix + "Host/Valve",
                                  null, // MUST be specified in the element
@@ -187,7 +187,7 @@ public class HostRuleSet extends RuleSetBase {
         digester.addSetProperties(prefix + "Host/Valve");
         digester.addSetNext(prefix + "Host/Valve",
                             "addValve",
-                            "org.org.apache.catalina.Valve");
+                            "org.apache.catalina.Valve");
 
     }
 

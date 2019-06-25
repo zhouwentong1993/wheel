@@ -127,7 +127,7 @@ public class StandardHost
      * for deployed web applications.
      */
     private String configClass =
-        "org.org.apache.catalina.startup.ContextConfig";
+        "org.apache.catalina.startup.ContextConfig";
 
 
     /**
@@ -135,7 +135,7 @@ public class StandardHost
      * deployed web applications.
      */
     private String contextClass =
-        "org.org.apache.catalina.core.StandardContext";
+        "org.apache.catalina.core.StandardContext";
 
 
     /**
@@ -156,14 +156,14 @@ public class StandardHost
      * for deployed web applications.
      */
     private String errorReportValveClass =
-        "org.org.apache.catalina.valves.ErrorReportValve";
+        "org.apache.catalina.valves.ErrorReportValve";
 
 
     /**
      * The descriptive information string for this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardHost/1.0";
+        "org.apache.catalina.core.StandardHost/1.0";
 
 
     /**
@@ -176,7 +176,7 @@ public class StandardHost
      * The Java class name of the default Mapper class for this Container.
      */
     private String mapperClass =
-        "org.org.apache.catalina.core.StandardHostMapper";
+        "org.apache.catalina.core.StandardHostMapper";
 
 
     /**

@@ -75,7 +75,7 @@ import javax.management.modelmbean.InvalidTargetObjectTypeException;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.deploy.ContextResource</code> component.</p>
+ * <code>org.apache.catalina.deploy.ContextResource</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.8 $ $Date: 2002/06/24 21:11:42 $

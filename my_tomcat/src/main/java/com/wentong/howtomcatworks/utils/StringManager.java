@@ -13,7 +13,7 @@ public class StringManager {
         try {
             resourceBundle = ResourceBundle.getBundle(packageName + ".LocalStrings");
         } catch (MissingResourceException e) {
-            System.out.println(e);
+            e.printStackTrace();
             ClassLoader cl = Thread.currentThread().getContextClassLoader();
             if (cl != null) {
                 try {

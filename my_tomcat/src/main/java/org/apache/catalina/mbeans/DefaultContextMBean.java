@@ -81,7 +81,7 @@ import java.util.ArrayList;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.core.StandardDefaultContext</code> component.</p>
+ * <code>org.apache.catalina.core.StandardDefaultContext</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.2 $ $Date: 2002/09/13 01:35:22 $

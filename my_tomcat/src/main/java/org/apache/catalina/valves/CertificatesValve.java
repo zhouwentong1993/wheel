@@ -146,7 +146,7 @@ public final class CertificatesValve
      * The descriptive information related to this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.valves.CertificatesValve/1.0";
+        "org.apache.catalina.valves.CertificatesValve/1.0";
 
 
     /**

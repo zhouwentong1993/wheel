@@ -79,7 +79,7 @@ import java.util.Locale;
  * that transforms an application response object (which might be the original
  * one passed to a servlet, or might be based on the 2.3
  * <code>javax.servlet.http.HttpServletResponseWrapper</code> class)
- * back into an internal <code>org.org.apache.catalina.HttpResponse</code>.
+ * back into an internal <code>org.apache.catalina.HttpResponse</code>.
  * <p>
  * <strong>WARNING</strong>:  Due to Java's lack of support for multiple
  * inheritance, all of the logic in <code>ApplicationResponse</code> is
@@ -138,7 +138,7 @@ class ApplicationHttpResponse extends HttpServletResponseWrapper {
      * Descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.core.ApplicationHttpResponse/1.0";
+        "org.apache.catalina.core.ApplicationHttpResponse/1.0";
 
 
     /**

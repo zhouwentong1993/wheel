@@ -119,12 +119,12 @@ public class MemoryUserDatabaseFactory implements ObjectFactory {
         throws Exception {
 
         // We only know how to deal with <code>javax.naming.Reference</code>s
-        // that specify a class name of "org.org.apache.catalina.UserDatabase"
+        // that specify a class name of "org.apache.catalina.UserDatabase"
         if ((obj == null) || !(obj instanceof Reference)) {
             return (null);
         }
         Reference ref = (Reference) obj;
-        if (!"org.org.apache.catalina.UserDatabase".equals(ref.getClassName())) {
+        if (!"org.apache.catalina.UserDatabase".equals(ref.getClassName())) {
             return (null);
         }
 

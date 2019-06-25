@@ -240,7 +240,7 @@ final class ApplicationFilterConfig implements FilterConfig {
         // Identify the class loader we will be using
         String filterClass = filterDef.getFilterClass();
         ClassLoader classLoader = null;
-        if (filterClass.startsWith("org.org.apache.catalina."))
+        if (filterClass.startsWith("org.apache.catalina."))
             classLoader = this.getClass().getClassLoader();
         else
             classLoader = context.getLoader().getClassLoader();

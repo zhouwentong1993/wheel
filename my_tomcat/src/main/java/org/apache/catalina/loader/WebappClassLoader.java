@@ -170,8 +170,8 @@ public class WebappClassLoader
         "javax",                                     // Java extensions
         "org.xml.sax",                               // SAX 1 & 2
         "org.w3c.dom",                               // DOM 1 & 2
-        "org.org.apache.xerces",                         // Xerces 1 & 2
-        "org.org.apache.xalan"                           // Xalan
+        "org.apache.xerces",                         // Xerces 1 & 2
+        "org.apache.xalan"                           // Xalan
     };
 
 
@@ -228,7 +228,7 @@ public class WebappClassLoader
      * The set of optional packages (formerly standard extensions) that
      * are available in the repositories associated with this class loader.
      * Each object in this list is of type
-     * <code>org.org.apache.catalina.loader.Extension</code>.
+     * <code>org.apache.catalina.loader.Extension</code>.
      */
     protected ArrayList available = new ArrayList();
 
@@ -323,7 +323,7 @@ public class WebappClassLoader
      * The set of optional packages (formerly standard extensions) that
      * are required in the repositories associated with this class loader.
      * Each object in this list is of type
-     * <code>org.org.apache.catalina.loader.Extension</code>.
+     * <code>org.apache.catalina.loader.Extension</code>.
      */
     protected ArrayList required = new ArrayList();
 

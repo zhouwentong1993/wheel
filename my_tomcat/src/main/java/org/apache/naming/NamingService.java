@@ -180,7 +180,7 @@ public final class NamingService
         
         try {
             
-            String value = "org.org.apache.naming";
+            String value = "org.apache.naming";
             String oldValue = System.getProperty(Context.URL_PKG_PREFIXES);
             if (oldValue != null) {
                 oldUrlValue = oldValue;

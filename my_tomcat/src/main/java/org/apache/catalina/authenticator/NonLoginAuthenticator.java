@@ -91,7 +91,7 @@ public final class NonLoginAuthenticator
      * Descriptive information about this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.authenticator.NonLoginAuthenticator/1.0";
+        "org.apache.catalina.authenticator.NonLoginAuthenticator/1.0";
 
 
     // ------------------------------------------------------------- Properties

@@ -81,7 +81,7 @@ import java.util.TimeZone;
 public class DateTool {
 
     private static StringManager sm =
-        StringManager.getManager("com.wentong.howtomcatworks.org.org.apache.catalina.util");
+        StringManager.getManager("com.wentong.howtomcatworks.org.apache.catalina.util");
 
     /** US locale - all HTTP dates are in english
      */

@@ -87,7 +87,7 @@ import java.util.Map;
  * <p>Implementation of the JAAS <strong>LoginModule</strong> interface,
  * primarily for use in testing <code>JAASRealm</code>.  It utilizes an
  * XML-format data file of username/password/role information identical to
- * that supported by <code>org.org.apache.catalina.realm.MemoryRealm</code>
+ * that supported by <code>org.apache.catalina.realm.MemoryRealm</code>
  * (except that digested passwords are not supported).</p>
  *
  * <p>This class recognizes the following string-valued options, which are

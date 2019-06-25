@@ -105,27 +105,27 @@ public class MBeanUtils {
      * is a class name, and the second element is the managed bean name.
      */
     private static String exceptions[][] = {
-        { "org.org.apache.ajp.tomcat4.Ajp13Connector",
+        { "org.apache.ajp.tomcat4.Ajp13Connector",
           "Ajp13Connector" },
-        { "org.org.apache.coyote.tomcat4.Ajp13Connector",
+        { "org.apache.coyote.tomcat4.Ajp13Connector",
           "CoyoteConnector" },
-        { "org.org.apache.catalina.core.StandardDefaultContext",
+        { "org.apache.catalina.core.StandardDefaultContext",
           "DefaultContext" },
-        { "org.org.apache.catalina.connector.http10.HttpConnector",
+        { "org.apache.catalina.connector.http10.HttpConnector",
           "Http10Connector" },
-        { "org.org.apache.catalina.connector.http.HttpConnector",
+        { "org.apache.catalina.connector.http.HttpConnector",
           "Http11Connector" },
-        { "org.org.apache.catalina.users.JDBCGroup",
+        { "org.apache.catalina.users.JDBCGroup",
           "Group" },
-        { "org.org.apache.catalina.users.JDBCRole",
+        { "org.apache.catalina.users.JDBCRole",
           "Role" },
-        { "org.org.apache.catalina.users.JDBCUser",
+        { "org.apache.catalina.users.JDBCUser",
           "User" },
-        { "org.org.apache.catalina.users.MemoryGroup",
+        { "org.apache.catalina.users.MemoryGroup",
           "Group" },
-        { "org.org.apache.catalina.users.MemoryRole",
+        { "org.apache.catalina.users.MemoryRole",
           "Role" },
-        { "org.org.apache.catalina.users.MemoryUser",
+        { "org.apache.catalina.users.MemoryUser",
           "User" },
     };
 
@@ -804,7 +804,7 @@ public class MBeanUtils {
                                   ",port=" + httpConnector.getPort() +
                                   ",address=" + httpConnector.getAddress());
             return (name);
-        } else if ("org.org.apache.ajp.tomcat4.Ajp13Connector".equals
+        } else if ("org.apache.ajp.tomcat4.Ajp13Connector".equals
                    (connector.getClass().getName())) {
             try {
                 String address = (String)
@@ -824,7 +824,7 @@ public class MBeanUtils {
                 throw new MalformedObjectNameException
                     ("Cannot create object name for " + connector+e);
             }
-        } else if ("org.org.apache.coyote.tomcat4.CoyoteConnector".equals
+        } else if ("org.apache.coyote.tomcat4.CoyoteConnector".equals
                    (connector.getClass().getName())) {
             try {
                 String address = (String)

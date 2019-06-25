@@ -187,7 +187,7 @@ public class CatalinaService extends Catalina {
             System.setProperty("catalina.useNaming", "false");
         } else {
             System.setProperty("catalina.useNaming", "true");
-            String value = "org.org.apache.naming";
+            String value = "org.apache.naming";
             String oldValue =
                 System.getProperty(javax.naming.Context.URL_PKG_PREFIXES);
             if (oldValue != null) {
@@ -195,7 +195,7 @@ public class CatalinaService extends Catalina {
             }
             System.setProperty(javax.naming.Context.URL_PKG_PREFIXES, value);
             System.setProperty(javax.naming.Context.INITIAL_CONTEXT_FACTORY,
-                               "org.org.apache.naming.java.javaURLContextFactory");
+                               "org.apache.naming.java.javaURLContextFactory");
         }
 
         // If a SecurityManager is being used, set properties for
@@ -207,7 +207,7 @@ public class CatalinaService extends Catalina {
             else
                 access = "sun.,";
             Security.setProperty("package.access",
-                access + "org.org.apache.catalina.,org.org.apache.jasper.");
+                access + "org.apache.catalina.,org.apache.jasper.");
             String definition = Security.getProperty("package.definition");
             if( definition != null && definition.length() > 0 )
                 definition += ",";
@@ -216,7 +216,7 @@ public class CatalinaService extends Catalina {
             Security.setProperty("package.definition",
                 // FIX ME package "javax." was removed to prevent HotSpot
                 // fatal internal errors
-                definition + "java.,org.org.apache.catalina.,org.org.apache.jasper.");
+                definition + "java.,org.apache.catalina.,org.apache.jasper.");
         }
 
         // Start the new server

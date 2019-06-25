@@ -144,7 +144,7 @@ public final class StandardWrapper
      * The descriptive information string for this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardWrapper/1.0";
+        "org.apache.catalina.core.StandardWrapper/1.0";
 
 
     /**
@@ -779,7 +779,7 @@ public final class StandardWrapper
      * at server startup time.
      * <p>
      * <b>IMPLEMENTATION NOTE</b>:  Servlets whose classnames begin with
-     * <code>org.org.apache.catalina.</code> (so-called "container" servlets)
+     * <code>org.apache.catalina.</code> (so-called "container" servlets)
      * are loaded by the same classloader that loaded this class, rather than
      * the classloader for the current web application.
      * This gives such classes access to Catalina internals, which are
@@ -1232,7 +1232,7 @@ System.out.println("after calling setWrapper");
      */
     private boolean isContainerProvidedServlet(String classname) {
 
-        if (classname.startsWith("org.org.apache.catalina.")) {
+        if (classname.startsWith("org.apache.catalina.")) {
             return (true);
         }
         try {
@@ -1254,7 +1254,7 @@ System.out.println("after calling setWrapper");
         if (servlet instanceof ContainerServlet) {
             if (((Context) getParent()).getPrivileged()
                 || (servlet.getClass().getName().equals
-                    ("org.org.apache.catalina.servlets.InvokerServlet"))) {
+                    ("org.apache.catalina.servlets.InvokerServlet"))) {
                 return (true);
             } else {
                 return (false);

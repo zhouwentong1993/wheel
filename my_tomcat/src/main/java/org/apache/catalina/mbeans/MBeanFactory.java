@@ -91,7 +91,7 @@ import java.lang.reflect.Method;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.core.StandardServer</code> component.</p>
+ * <code>org.apache.catalina.core.StandardServer</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.40 $ $Date: 2002/09/19 22:55:48 $
@@ -144,13 +144,13 @@ public class MBeanFactory extends BaseModelMBean {
      */
     public String findObjectName(String type) {
 
-        if (type.equals("org.org.apache.catalina.core.StandardContext")) {
+        if (type.equals("org.apache.catalina.core.StandardContext")) {
             return "StandardContext";
-        } else if (type.equals("org.org.apache.catalina.core.StandardDefaultContext")) {
+        } else if (type.equals("org.apache.catalina.core.StandardDefaultContext")) {
             return "DefaultContext";
-        } else if (type.equals("org.org.apache.catalina.core.StandardEngine")) {
+        } else if (type.equals("org.apache.catalina.core.StandardEngine")) {
             return "Engine";
-        } else if (type.equals("org.org.apache.catalina.core.StandardHost")) {
+        } else if (type.equals("org.apache.catalina.core.StandardHost")) {
             return "Host";
         } else {
             return null;
@@ -254,7 +254,7 @@ public class MBeanFactory extends BaseModelMBean {
             partypes3[0] = str.getClass();
             Method meth3 = cls.getMethod("setProtocolHandlerClassName", partypes3);
             Object arglist3[] = new Object[1];
-            arglist3[0] = new String("org.org.apache.jk.server.JkCoyoteHandler");
+            arglist3[0] = new String("org.apache.jk.server.JkCoyoteHandler");
             meth3.invoke(retobj, arglist3);
 
         } catch (Exception e) {

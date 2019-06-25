@@ -100,7 +100,7 @@ final class StandardEngineValve
      * The descriptive information related to this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardEngineValve/1.0";
+        "org.apache.catalina.core.StandardEngineValve/1.0";
 
 
     /**

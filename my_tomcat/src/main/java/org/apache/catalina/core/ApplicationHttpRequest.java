@@ -80,7 +80,7 @@ import java.util.*;
  * that transforms an application request object (which might be the original
  * one passed to a servlet, or might be based on the 2.3
  * <code>javax.servlet.http.HttpServletRequestWrapper</code> class)
- * back into an internal <code>org.org.apache.catalina.HttpRequest</code>.
+ * back into an internal <code>org.apache.catalina.HttpRequest</code>.
  * <p>
  * <strong>WARNING</strong>:  Due to Java's lack of support for multiple
  * inheritance, all of the logic in <code>ApplicationRequest</code> is
@@ -142,7 +142,7 @@ class ApplicationHttpRequest extends HttpServletRequestWrapper {
      * Descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.core.ApplicationHttpRequest/1.0";
+        "org.apache.catalina.core.ApplicationHttpRequest/1.0";
 
 
     /**

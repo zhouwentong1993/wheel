@@ -320,7 +320,7 @@ public final class InvokerServlet
             pathInfo = "";
         }
 
-        if (servletClass.startsWith("org.org.apache.catalina")) {
+        if (servletClass.startsWith("org.apache.catalina")) {
             response.sendError(HttpServletResponse.SC_NOT_FOUND,
                                inRequestURI);
             return;
@@ -329,7 +329,7 @@ public final class InvokerServlet
         if (debug >= 1)
             log("Processing servlet '" + servletClass +
                 "' with path info '" + pathInfo + "'");
-        String name = "org.org.apache.catalina.INVOKER." + servletClass;
+        String name = "org.apache.catalina.INVOKER." + servletClass;
         String pattern = inServletPath + "/" + servletClass + "/*";
         Wrapper wrapper = null;
 

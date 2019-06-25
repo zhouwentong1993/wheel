@@ -62,7 +62,7 @@ package org.apache.catalina.valves;
 
 
 /**
- * Manifest constants for the <code>org.org.apache.catalina.valves</code>
+ * Manifest constants for the <code>org.apache.catalina.valves</code>
  * package.
  *
  * @author Craig R. McClanahan
@@ -70,7 +70,7 @@ package org.apache.catalina.valves;
 
 public final class Constants {
 
-    public static final String Package = "org.org.apache.catalina.valves";
+    public static final String Package = "org.apache.catalina.valves";
 
     // Constants for the AccessLogValve class
     public static final class AccessLog {

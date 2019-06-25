@@ -107,7 +107,7 @@ public abstract class ValveBase
      * should be overridden by subclasses.
      */
     protected static String info =
-        "org.org.apache.catalina.core.ValveBase/1.0";
+        "org.apache.catalina.core.ValveBase/1.0";
 
 
     /**

@@ -90,7 +90,7 @@ public abstract class RequestBase
      * Descriptive information about this Request implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.connector.RequestBase/1.0";
+        "org.apache.catalina.connector.RequestBase/1.0";
 
 
     /**

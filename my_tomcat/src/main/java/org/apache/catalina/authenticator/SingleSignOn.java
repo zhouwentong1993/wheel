@@ -93,7 +93,7 @@ import java.util.HashMap;
  *     one), and not overridden at the web application level.</li>
  * <li>The web applications themselves must use one of the standard
  *     Authenticators found in the
- *     <code>org.org.apache.catalina.authenticator</code> package.</li>
+ *     <code>org.apache.catalina.authenticator</code> package.</li>
  * </ul>
  *
  * @author Craig R. McClanahan
@@ -125,7 +125,7 @@ public class SingleSignOn
      * Descriptive information about this Valve implementation.
      */
     protected static String info =
-        "org.org.apache.catalina.authenticator.SingleSignOn";
+        "org.apache.catalina.authenticator.SingleSignOn";
 
 
     /**

@@ -153,7 +153,7 @@ public class StandardContext
      * The Java class name of the CharsetMapper class to be created.
      */
     private String charsetMapperClass =
-      "org.org.apache.catalina.util.CharsetMapper";
+      "org.apache.catalina.util.CharsetMapper";
 
 
     /**
@@ -237,7 +237,7 @@ public class StandardContext
      * The descriptive information string for this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardContext/1.0";
+        "org.apache.catalina.core.StandardContext/1.0";
 
 
     /**
@@ -269,7 +269,7 @@ public class StandardContext
      * The Java class name of the default Mapper class for this Container.
      */
     private String mapperClass =
-        "org.org.apache.catalina.core.StandardContextMapper";
+        "org.apache.catalina.core.StandardContextMapper";
 
 
     /**
@@ -403,7 +403,7 @@ public class StandardContext
     /**
      * Java class name of the Wrapper class implementation we use.
      */
-    private String wrapperClass = "org.org.apache.catalina.core.StandardWrapper";
+    private String wrapperClass = "org.apache.catalina.core.StandardWrapper";
 
 
     /**
@@ -3842,7 +3842,7 @@ public class StandardContext
      */
     private void postWelcomeFiles() {
 
-        getServletContext().setAttribute("org.org.apache.catalina.WELCOME_FILES",
+        getServletContext().setAttribute("org.apache.catalina.WELCOME_FILES",
                                          welcomeFiles);
 
     }

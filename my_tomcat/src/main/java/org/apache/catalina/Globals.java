@@ -22,7 +22,7 @@ public final class Globals {
     /**
      * SSL Certificate Request Attributite.
      */
-    public static final String SSL_CERTIFICATE_ATTR = "org.org.apache.coyote.request.X509Certificate";
+    public static final String SSL_CERTIFICATE_ATTR = "org.apache.coyote.request.X509Certificate";
 
     /**
      * The request attribute under which we store the name of the cipher suite
@@ -38,7 +38,7 @@ public final class Globals {
      * used for loading servlets (as an object of type java.lang.ClassLoader).
      */
     public static final String CLASS_LOADER_ATTR =
-        "org.org.apache.catalina.classloader";
+        "org.apache.catalina.classloader";
 
 
     /**
@@ -46,7 +46,7 @@ public final class Globals {
      * context can be used to manipulate static files.
      */
     public static final String RESOURCES_ATTR =
-        "org.org.apache.catalina.resources";
+        "org.apache.catalina.resources";
 
 
     /**
@@ -55,7 +55,7 @@ public final class Globals {
      * delimited with the appropriate path delimiter for this platform.
      */
     public static final String CLASS_PATH_ATTR =
-        "org.org.apache.catalina.jsp_classpath";
+        "org.apache.catalina.jsp_classpath";
 
 
     /**
@@ -104,7 +104,7 @@ public final class Globals {
      * indirectly instead of through a servlet mapping.
      */
     public static final String INVOKED_ATTR =
-        "org.org.apache.catalina.INVOKED";
+        "org.apache.catalina.INVOKED";
 
 
     /**
@@ -113,7 +113,7 @@ public final class Globals {
      * if any.
      */
     public static final String JSP_FILE_ATTR =
-        "org.org.apache.catalina.jsp_file";
+        "org.apache.catalina.jsp_file";
 
 
     /**
@@ -129,7 +129,7 @@ public final class Globals {
      * will be stored for privileged contexts (if enabled).
      */
     public static final String MBEAN_REGISTRY_ATTR =
-        "org.org.apache.catalina.Registry";
+        "org.apache.catalina.Registry";
 
 
     /**
@@ -137,7 +137,7 @@ public final class Globals {
      * for privileged contexts (if enabled).
      */
     public static final String MBEAN_SERVER_ATTR =
-        "org.org.apache.catalina.MBeanServer";
+        "org.apache.catalina.MBeanServer";
 
 
     /**
@@ -145,7 +145,7 @@ public final class Globals {
      * named dispatcher request.
      */
     public static final String NAMED_DISPATCHER_ATTR =
-        "org.org.apache.catalina.NAMED";
+        "org.apache.catalina.NAMED";
 
 
     /**
@@ -215,7 +215,7 @@ public final class Globals {
      * welcome files (as an object of type String[]) for this application.
      */
     public static final String WELCOME_FILES_ATTR =
-        "org.org.apache.catalina.WELCOME_FILES";
+        "org.apache.catalina.WELCOME_FILES";
 
 
     /**

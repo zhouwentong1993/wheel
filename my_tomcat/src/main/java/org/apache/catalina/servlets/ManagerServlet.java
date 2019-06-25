@@ -427,7 +427,7 @@ System.out.println("init");
         String servletName = getServletConfig().getServletName();
         if (servletName == null)
             servletName = "";
-        if (servletName.startsWith("org.org.apache.catalina.INVOKER."))
+        if (servletName.startsWith("org.apache.catalina.INVOKER."))
             throw new UnavailableException
                 (sm.getString("managerServlet.cannotInvoke"));
 
@@ -859,7 +859,7 @@ System.out.println("init");
 
     /**
      * Render a list of security role names (and corresponding descriptions)
-     * from the <code>org.org.apache.catalina.UserDatabase</code> resource that is
+     * from the <code>org.apache.catalina.UserDatabase</code> resource that is
      * connected to the <code>users</code> resource reference.  Typically, this
      * will be the global user database, but can be adjusted if you have
      * different user databases for different virtual hosts.

@@ -166,7 +166,7 @@ public final class AccessLogValve
      * The descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.valves.AccessLogValve/1.0";
+        "org.apache.catalina.valves.AccessLogValve/1.0";
 
 
     /**

@@ -75,6 +75,6 @@ package org.apache.catalina.realm;
 
 public final class Constants {
 
-    public static final String Package = "org.org.apache.catalina.realm";
+    public static final String Package = "org.apache.catalina.realm";
 
 }

@@ -13,11 +13,11 @@
 
 
   <mbean         name="AccessLogValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that generates a web server access log"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.AccessLogValve">
+                 type="org.apache.catalina.valves.AccessLogValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -53,12 +53,12 @@
 
 
   <mbean         name="BasicAuthenticator"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="An Authenticator and Valve implementation of HTTP BASIC
                         Authentication"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.BasicAuthenticator">
+                 type="org.apache.catalina.authenticator.BasicAuthenticator">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -88,11 +88,11 @@
 
 
   <mbean         name="CertificatesValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that exposes SSL certificate information"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.CertificatesValve">
+                 type="org.apache.catalina.valves.CertificatesValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -107,13 +107,13 @@
 
 
   <mbean         name="ContextConfig"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Startup event listener for a Context that configures the
                         properties of that Context, and the associated defined
                         servlets"
                domain="Catalina"
                 group="Listener"
-                 type="org.org.apache.catalina.startup.ContextConfig">
+                 type="org.apache.catalina.startup.ContextConfig">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -128,11 +128,11 @@
 
 
   <mbean         name="ContextEnvironment"
-            className="org.org.apache.catalina.mbeans.ContextEnvironmentMBean"
+            className="org.apache.catalina.mbeans.ContextEnvironmentMBean"
           description="Representation of an application environment entry"
                domain="Catalina"
                 group="Resources"
-                 type="org.org.apache.catalina.deploy.ContextEnvironment">
+                 type="org.apache.catalina.deploy.ContextEnvironment">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -164,11 +164,11 @@
 
 
   <mbean         name="ContextResource"
-            className="org.org.apache.catalina.mbeans.ContextResourceMBean"
+            className="org.apache.catalina.mbeans.ContextResourceMBean"
           description="Representation of a resource reference for a web application"
                domain="Catalina"
                 group="Resources"
-                 type="org.org.apache.catalina.deploy.ContextResource">
+                 type="org.apache.catalina.deploy.ContextResource">
 
     <attribute   name="auth"
           description="The authorization requirement for this resource"
@@ -194,11 +194,11 @@
 
 
    <mbean         name="ContextResourceLink"
-            className="org.org.apache.catalina.mbeans.ContextResourceLinkMBean"
+            className="org.apache.catalina.mbeans.ContextResourceLinkMBean"
           description="Representation of a resource link for a web application"
                domain="Catalina"
                 group="Resources"
-                 type="org.org.apache.catalina.deploy.ContextResourceLink">
+                 type="org.apache.catalina.deploy.ContextResourceLink">
 
     <attribute   name="global"
           description="The global name of this resource"
@@ -216,11 +216,11 @@
 
 
   <mbean         name="CoyoteConnector"
-            className="org.org.apache.catalina.mbeans.ConnectorMBean"
+            className="org.apache.catalina.mbeans.ConnectorMBean"
           description="Implementation of a Coyote connector"
                domain="Catalina"
                 group="Connector"
-                 type="org.org.apache.coyote.tomcat4.CoyoteConnector">
+                 type="org.apache.coyote.tomcat4.CoyoteConnector">
 
     <attribute   name="acceptCount"
           description="The accept count for this Connector"
@@ -318,12 +318,12 @@
 
 
   <mbean         name="DefaultContext"
-              className="org.org.apache.catalina.mbeans.DefaultContextMBean"
+              className="org.apache.catalina.mbeans.DefaultContextMBean"
           description="Used to store the default configuration a Host will use
                         when creating a Context"
                domain="Catalina"
                 group="Default-Context"
-                 type="org.org.apache.catalina.core.StandardDefaultContext">
+                 type="org.apache.catalina.core.StandardDefaultContext">
 
     <attribute   name="cookies"
           description="Should we attempt to use cookies for session id
@@ -390,12 +390,12 @@
 
 
   <mbean         name="DigestAuthenticator"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="An Authenticator and Valve implementation of HTTP DIGEST
                         Authentication"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.DigestAuthenticator">
+                 type="org.apache.catalina.authenticator.DigestAuthenticator">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -424,13 +424,13 @@
   </mbean>
 
   <mbean         name="EngineConfig"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Startup event listener for a Engine that configures the
                         properties of that Engine, and the associated defined
                         contexts"
                domain="Catalina"
                 group="Listener"
-                 type="org.org.apache.catalina.startup.EngineConfig">
+                 type="org.apache.catalina.startup.EngineConfig">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -445,11 +445,11 @@
 
 
   <mbean         name="ErrorReportValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of a Valve that outputs HTML error pages"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.ErrorReportValve">
+                 type="org.apache.catalina.valves.ErrorReportValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -464,12 +464,12 @@
 
 
   <mbean         name="ErrorDispatcherValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of a Valve that handles the error
                         dispatch"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.ErrorDispatcherValve">
+                 type="org.apache.catalina.valves.ErrorDispatcherValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -484,12 +484,12 @@
 
 
   <mbean         name="FileLogger"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of Logger that appends log messages to a
                         file"
                domain="Catalina"
                 group="Logger"
-                 type="org.org.apache.catalina.logger.FileLogger">
+                 type="org.apache.catalina.logger.FileLogger">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -524,12 +524,12 @@
   </mbean>
 
   <mbean         name="FormAuthenticator"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="An Authenticator and Valve implementation of FORM BASED
                         Authentication"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.FormAuthenticator">
+                 type="org.apache.catalina.authenticator.FormAuthenticator">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -559,11 +559,11 @@
 
 
   <mbean         name="Group"
-            className="org.org.apache.catalina.mbeans.GroupMBean"
+            className="org.apache.catalina.mbeans.GroupMBean"
           description="Group from a user database"
                domain="Users"
                 group="Group"
-                 type="org.org.apache.catalina.Group">
+                 type="org.apache.catalina.Group">
 
     <attribute   name="description"
           description="Description of this group"
@@ -611,13 +611,13 @@
 
 
   <mbean         name="HostConfig"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Startup event listener for a Host that configures the
                         properties of that Host, and the associated defined
                         contexts"
                domain="Catalina"
                 group="Listener"
-                 type="org.org.apache.catalina.startup.HostConfig">
+                 type="org.apache.catalina.startup.HostConfig">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -642,11 +642,11 @@
 
 
   <mbean         name="Http10Connector"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="HTTP/1.0 Connector for Tomcat Standalone"
                domain="Catalina"
                 group="Connector"
-                 type="org.org.apache.catalina.connector.http10.HttpConnector">
+                 type="org.apache.catalina.connector.http10.HttpConnector">
 
     <attribute   name="acceptCount"
           description="The accept count for this Connector"
@@ -716,11 +716,11 @@
 
 
   <mbean         name="Http11Connector"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="HTTP/1.1 Connector for Tomcat Standalone"
                domain="Catalina"
                 group="Connector"
-                 type="org.org.apache.catalina.connector.http.HttpConnector">
+                 type="org.apache.catalina.connector.http.HttpConnector">
 
     <attribute   name="acceptCount"
           description="The accept count for this Connector"
@@ -795,12 +795,12 @@
 
 
   <mbean         name="JAASRealm"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implmentation of Realm that authenticates users via the
                         Java Authentication and Authorization Service (JAAS)"
                domain="Catalina"
                 group="Realm"
-                 type="org.org.apache.catalina.realm.JAASRealm">
+                 type="org.apache.catalina.realm.JAASRealm">
 
     <attribute   name="appName"
           description="The application name passed to the JAAS LoginContext,
@@ -841,12 +841,12 @@
 
 
   <mbean         name="JDBCRealm"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of Realm that works with any JDBC
                         supported database"
                domain="Catalina"
                 group="Realm"
-                 type="org.org.apache.catalina.realm.JDBCRealm">
+                 type="org.apache.catalina.realm.JDBCRealm">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -908,11 +908,11 @@
 
 
   <mbean         name="JDBCUserDatabase"
-            className="org.org.apache.catalina.mbeans.JDBCUserDatabaseMBean"
+            className="org.apache.catalina.mbeans.JDBCUserDatabaseMBean"
           description="JDBC based user and group database"
                domain="Users"
                 group="UserDatabase"
-                 type="org.org.apache.catalina.users.JDBCUserDatabase">
+                 type="org.apache.catalina.users.JDBCUserDatabase">
 
     <attribute   name="groups"
           description="MBean Names of all defined groups"
@@ -1032,13 +1032,13 @@
 
 
   <mbean         name="JNDIRealm"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of Realm that works with a directory
                         server accessed via the Java Naming and Directory
                         Interface (JNDI) APIs"
                domain="Catalina"
                 group="Realm"
-                 type="org.org.apache.catalina.realm.JNDIRealm">
+                 type="org.apache.catalina.realm.JNDIRealm">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -1117,7 +1117,7 @@
 
 
   <mbean         name="MBeanFactory"
-            className="org.org.apache.catalina.mbeans.MBeanFactory"
+            className="org.apache.catalina.mbeans.MBeanFactory"
           description="Factory for MBeans and corresponding components"
                domain="Catalina">
 
@@ -1459,12 +1459,12 @@
 
 
   <mbean         name="MemoryRealm"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Simple implementation of Realm that reads an XML file to
                         configure the valid users, passwords, and roles"
                domain="Catalina"
                 group="Realm"
-                 type="org.org.apache.catalina.realm.MemoryRealm">
+                 type="org.apache.catalina.realm.MemoryRealm">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -1484,11 +1484,11 @@
 
 
   <mbean         name="MemoryUserDatabase"
-            className="org.org.apache.catalina.mbeans.MemoryUserDatabaseMBean"
+            className="org.apache.catalina.mbeans.MemoryUserDatabaseMBean"
           description="In-memory user and group database"
                domain="Users"
                 group="UserDatabase"
-                 type="org.org.apache.catalina.users.MemoryUserDatabase">
+                 type="org.apache.catalina.users.MemoryUserDatabase">
 
     <attribute   name="encoding"
           description="Character encoding to use when writing XML file"
@@ -1616,12 +1616,12 @@
 
 
   <mbean         name="NamingContextListener"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Helper class used to initialize and populate the JNDI
           context associated with each context and server"
                domain="Catalina"
                 group="Listener"
-                 type="org.org.apache.catalina.core.NamingContextListener">
+                 type="org.apache.catalina.core.NamingContextListener">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -1636,12 +1636,12 @@
 
 
   <mbean         name="NamingResources"
-            className="org.org.apache.catalina.mbeans.NamingResourcesMBean"
+            className="org.apache.catalina.mbeans.NamingResourcesMBean"
           description="Holds and manages the naming resources defined in the
 	  J2EE Enterprise Naming Context and their associated JNDI context"
                domain="Catalina"
                 group="Resources"
-                 type="org.org.apache.catalina.deploy.NamingResources">
+                 type="org.apache.catalina.deploy.NamingResources">
 
     <attribute   name="environments"
           description="MBean Names of the set of defined environment entries
@@ -1734,13 +1734,13 @@
 
 
   <mbean         name="RemoteAddrValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Concrete implementation of RequestFilterValve that
                         filters based on the string representation of the remote
                         client's IP address"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.RemoteAddrValve">
+                 type="org.apache.catalina.valves.RemoteAddrValve">
 
     <attribute   name="allow"
           description="The comma-delimited set of allow expressions"
@@ -1763,13 +1763,13 @@
 
 
   <mbean         name="RemoteHostValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Concrete implementation of RequestFilterValve that
                         filters based on the string representation of the remote
                         client's host name"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.RemoteHostValve">
+                 type="org.apache.catalina.valves.RemoteHostValve">
 
     <attribute   name="allow"
           description="The comma-delimited set of allow expressions"
@@ -1792,12 +1792,12 @@
 
 
   <mbean         name="NonLoginAuthenticator"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="An Authenticator and Valve implementation that checks
 			only security constraints not involving user authentication"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.NonLoginAuthenticator">
+                 type="org.apache.catalina.authenticator.NonLoginAuthenticator">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -1827,13 +1827,13 @@
 
 
   <mbean         name="RequestDumperValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Implementation of a Valve that logs interesting contents
                         from the specified Request and the corresponding
                         Response"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.valves.RequestDumperValve">
+                 type="org.apache.catalina.valves.RequestDumperValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -1848,11 +1848,11 @@
 
 
   <mbean         name="Role"
-            className="org.org.apache.catalina.mbeans.RoleMBean"
+            className="org.apache.catalina.mbeans.RoleMBean"
           description="Security role from a user database"
                domain="Users"
                 group="Role"
-                 type="org.org.apache.catalina.Role">
+                 type="org.apache.catalina.Role">
 
     <attribute   name="description"
           description="Description of this role"
@@ -1866,11 +1866,11 @@
 
 
   <mbean         name="SingleSignOn"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="A Valve that supports a 'single signon' user experience"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.SingleSignOn">
+                 type="org.apache.catalina.authenticator.SingleSignOn">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -1885,13 +1885,13 @@
 
 
   <mbean         name="SSLAuthenticator"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="An Authenticator and Valve implementation of
                         authentication that utilizes SSL certificates to
                         identify client users"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.authenticator.SSLAuthenticator">
+                 type="org.apache.catalina.authenticator.SSLAuthenticator">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -1921,11 +1921,11 @@
 
 
   <mbean         name="StandardContext"
-            className="org.org.apache.catalina.mbeans.StandardContextMBean"
+            className="org.apache.catalina.mbeans.StandardContextMBean"
           description="Standard Context Component"
                domain="Catalina"
                 group="Context"
-                 type="org.org.apache.catalina.core.StandardContext">
+                 type="org.apache.catalina.core.StandardContext">
 
     <attribute   name="cookies"
           description="Should we attempt to use cookies for session id
@@ -2034,12 +2034,12 @@
 
 
   <mbean         name="StandardContextValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that implements the default basic behavior for the
                         StandardContext container implementation"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.core.StandardContextValve">
+                 type="org.apache.catalina.core.StandardContextValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2054,11 +2054,11 @@
 
 
   <mbean         name="StandardEngine"
-            className="org.org.apache.catalina.mbeans.StandardEngineMBean"
+            className="org.apache.catalina.mbeans.StandardEngineMBean"
           description="Standard Engine Component"
                domain="Catalina"
                 group="Engine"
-                 type="org.org.apache.catalina.core.StandardEngine">
+                 type="org.apache.catalina.core.StandardEngine">
 
     <attribute   name="debug"
           description="The debugging detail level for this component"
@@ -2080,12 +2080,12 @@
 
 
   <mbean         name="StandardEngineValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that implements the default basic behavior for the
                         StandardEngine container implementation"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.core.StandardEngineValve">
+                 type="org.apache.catalina.core.StandardEngineValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2100,11 +2100,11 @@
 
 
   <mbean         name="StandardHost"
-            className="org.org.apache.catalina.mbeans.StandardHostMBean"
+            className="org.apache.catalina.mbeans.StandardHostMBean"
           description="Standard Host Component"
                domain="Catalina"
                 group="Host"
-                 type="org.org.apache.catalina.core.StandardHost">
+                 type="org.apache.catalina.core.StandardHost">
 
     <attribute   name="appBase"
           description="The application root for this Host"
@@ -2174,12 +2174,12 @@
 
 
   <mbean         name="StandardHostValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that implements the default basic behavior for the
                         StandardHost container implementation"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.core.StandardHostValve">
+                 type="org.apache.catalina.core.StandardHostValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2194,11 +2194,11 @@
 
 
   <mbean         name="PersistentManager"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Standard implementation of the Manager interface"
                domain="Catalina"
                 group="Manager"
-                 type="org.org.apache.catalina.session.PersistentManager" >
+                 type="org.apache.catalina.session.PersistentManager" >
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -2277,11 +2277,11 @@
 
 
   <mbean         name="StandardManager"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Standard implementation of the Manager interface"
                domain="Catalina"
                 group="Manager"
-                 type="org.org.apache.catalina.session.StandardManager">
+                 type="org.apache.catalina.session.StandardManager">
 
     <attribute   name="algorithm"
           description="The message digest algorithm to be used when generating
@@ -2341,11 +2341,11 @@
 
 
   <mbean         name="StandardServer"
-            className="org.org.apache.catalina.mbeans.StandardServerMBean"
+            className="org.apache.catalina.mbeans.StandardServerMBean"
           description="Standard Server Component"
                domain="Catalina"
                 group="Server"
-                 type="org.org.apache.catalina.core.StandardServer">
+                 type="org.apache.catalina.core.StandardServer">
 
     <attribute   name="debug"
           description="The debugging detail level for this component"
@@ -2373,11 +2373,11 @@
 
 
   <mbean         name="StandardService"
-            className="org.org.apache.catalina.mbeans.StandardServiceMBean"
+            className="org.apache.catalina.mbeans.StandardServiceMBean"
           description="Standard Service Component"
                domain="Catalina"
                 group="Service"
-                 type="org.org.apache.catalina.core.StandardService">
+                 type="org.apache.catalina.core.StandardService">
 
     <attribute   name="debug"
           description="The debugging detail level for this component"
@@ -2395,12 +2395,12 @@
 
 
   <mbean         name="StandardWrapperValve"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Valve that implements the default basic behavior for the
                         StandardWrapper container implementation"
                domain="Catalina"
                 group="Valve"
-                 type="org.org.apache.catalina.core.StandardWrapperValve">
+                 type="org.apache.catalina.core.StandardWrapperValve">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2415,12 +2415,12 @@
 
 
   <mbean         name="SystemErrLogger"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Simple implementation of Logger that writes to
                         System.err"
                domain="Catalina"
                 group="Logger"
-                 type="org.org.apache.catalina.logger.SystemErrLogger">
+                 type="org.apache.catalina.logger.SystemErrLogger">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2440,12 +2440,12 @@
 
 
   <mbean         name="SystemOutLogger"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Simple implementation of Logger that writes to
                         System.out"
                domain="Catalina"
                 group="Logger"
-                 type="org.org.apache.catalina.logger.SystemOutLogger">
+                 type="org.apache.catalina.logger.SystemOutLogger">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2465,11 +2465,11 @@
 
 
   <mbean         name="User"
-            className="org.org.apache.catalina.mbeans.UserMBean"
+            className="org.apache.catalina.mbeans.UserMBean"
           description="User from a user database"
                domain="Users"
                 group="User"
-                 type="org.org.apache.catalina.User">
+                 type="org.apache.catalina.User">
 
     <attribute   name="fullName"
           description="Full name of this user"
@@ -2544,12 +2544,12 @@
 
 
   <mbean         name="UserDatabaseRealm"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Realm connected to a UserDatabase as a global JNDI
                         resource"
                domain="Catalina"
                 group="Realm"
-                 type="org.org.apache.catalina.realm.UserDatabaseRealm">
+                 type="org.apache.catalina.realm.UserDatabaseRealm">
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
@@ -2568,12 +2568,12 @@
 
 
   <mbean         name="WebappLoader"
-            className="org.org.apache.catalina.mbeans.ClassNameMBean"
+            className="org.apache.catalina.mbeans.ClassNameMBean"
           description="Classloader implementation which is specialized for
                         handling web applications"
                domain="Catalina"
                 group="Loader"
-                 type="org.org.apache.catalina.loader.WebappLoader">
+                 type="org.apache.catalina.loader.WebappLoader">
 
     <attribute   name="checkInterval"
           description="The number of seconds between checks for modified

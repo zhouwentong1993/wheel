@@ -125,7 +125,7 @@ public class DigestAuthenticator
      * Descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.authenticator.DigestAuthenticator/1.0";
+        "org.apache.catalina.authenticator.DigestAuthenticator/1.0";
 
 
     // ----------------------------------------------------------- Constructors

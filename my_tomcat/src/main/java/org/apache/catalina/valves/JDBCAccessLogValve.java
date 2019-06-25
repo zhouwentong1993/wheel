@@ -229,7 +229,7 @@ public final class JDBCAccessLogValve
      * The descriptive information about this implementation.
      */
     protected static String info = 
-        "org.org.apache.catalina.valves.JDBCAccessLogValve/1.0";
+        "org.apache.catalina.valves.JDBCAccessLogValve/1.0";
 
 
     /**

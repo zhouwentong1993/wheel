@@ -71,7 +71,7 @@ public class SSIServletRequestUtil {
      * Return the relative path associated with this servlet.
      *
      * Taken from DefaultServlet.java.  Perhaps this should be put in
-     * org.org.apache.catalina.util somewhere?  Seems like it would be widely used.
+     * org.apache.catalina.util somewhere?  Seems like it would be widely used.
      *
      * @param request The servlet request we are processing
      */

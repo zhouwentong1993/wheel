@@ -142,7 +142,7 @@ public class StandardDefaultContext
      * The descriptive information string for this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.DefaultContext/1.0";
+        "org.apache.catalina.core.DefaultContext/1.0";
 
 
     /**
@@ -156,7 +156,7 @@ public class StandardDefaultContext
      * The Java class name of the default Mapper class for this Container.
      */
     private String mapperClass =
-        "org.org.apache.catalina.core.StandardContextMapper";
+        "org.apache.catalina.core.StandardContextMapper";
 
 
     /**
@@ -201,7 +201,7 @@ public class StandardDefaultContext
     /**
      * Java class name of the Wrapper class implementation we use.
      */
-    private String wrapperClass = "org.org.apache.catalina.core.StandardWrapper";
+    private String wrapperClass = "org.apache.catalina.core.StandardWrapper";
 
 
     /**

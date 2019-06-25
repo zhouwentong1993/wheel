@@ -111,7 +111,7 @@ public final class StandardService
      * Descriptive information about this component implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardService/1.0";
+        "org.apache.catalina.core.StandardService/1.0";
 
 
     /**

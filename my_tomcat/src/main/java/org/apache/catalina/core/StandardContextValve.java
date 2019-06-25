@@ -97,7 +97,7 @@ final class StandardContextValve
      * The descriptive information related to this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardContextValve/1.0";
+        "org.apache.catalina.core.StandardContextValve/1.0";
 
 
     /**

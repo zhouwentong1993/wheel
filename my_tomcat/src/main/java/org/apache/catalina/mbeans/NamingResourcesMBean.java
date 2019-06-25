@@ -81,7 +81,7 @@ import java.util.ArrayList;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.deploy.NamingResources</code> component.</p>
+ * <code>org.apache.catalina.deploy.NamingResources</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.10 $ $Date: 2002/06/24 21:11:42 $

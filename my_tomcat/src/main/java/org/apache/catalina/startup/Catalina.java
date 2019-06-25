@@ -280,19 +280,19 @@ public class Catalina {
 
         // Configure the actions we will be using
         digester.addObjectCreate("Server",
-                                 "org.org.apache.catalina.core.StandardServer",
+                                 "org.apache.catalina.core.StandardServer",
                                  "className");
         digester.addSetProperties("Server");
         digester.addSetNext("Server",
                             "setServer",
-                            "org.org.apache.catalina.Server");
+                            "org.apache.catalina.Server");
 
         digester.addObjectCreate("Server/GlobalNamingResources",
-                                 "org.org.apache.catalina.deploy.NamingResources");
+                                 "org.apache.catalina.deploy.NamingResources");
         digester.addSetProperties("Server/GlobalNamingResources");
         digester.addSetNext("Server/GlobalNamingResources",
                             "setGlobalNamingResources",
-                            "org.org.apache.catalina.deploy.NamingResources");
+                            "org.apache.catalina.deploy.NamingResources");
 
         digester.addObjectCreate("Server/Listener",
                                  null, // MUST be specified in the element
@@ -300,15 +300,15 @@ public class Catalina {
         digester.addSetProperties("Server/Listener");
         digester.addSetNext("Server/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         digester.addObjectCreate("Server/Service",
-                                 "org.org.apache.catalina.core.StandardService",
+                                 "org.apache.catalina.core.StandardService",
                                  "className");
         digester.addSetProperties("Server/Service");
         digester.addSetNext("Server/Service",
                             "addService",
-                            "org.org.apache.catalina.Service");
+                            "org.apache.catalina.Service");
 
         digester.addObjectCreate("Server/Service/Listener",
                                  null, // MUST be specified in the element
@@ -316,23 +316,23 @@ public class Catalina {
         digester.addSetProperties("Server/Service/Listener");
         digester.addSetNext("Server/Service/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         digester.addObjectCreate("Server/Service/Connector",
-                                 "org.org.apache.catalina.connector.http.HttpConnector",
+                                 "org.apache.catalina.connector.http.HttpConnector",
                                  "className");
         digester.addSetProperties("Server/Service/Connector");
         digester.addSetNext("Server/Service/Connector",
                             "addConnector",
-                            "org.org.apache.catalina.Connector");
+                            "org.apache.catalina.Connector");
 
         digester.addObjectCreate("Server/Service/Connector/Factory",
-                                 "org.org.apache.catalina.net.DefaultServerSocketFactory",
+                                 "org.apache.catalina.net.DefaultServerSocketFactory",
                                  "className");
         digester.addSetProperties("Server/Service/Connector/Factory");
         digester.addSetNext("Server/Service/Connector/Factory",
                             "setFactory",
-                            "org.org.apache.catalina.net.ServerSocketFactory");
+                            "org.apache.catalina.net.ServerSocketFactory");
 
         digester.addObjectCreate("Server/Service/Connector/Listener",
                                  null, // MUST be specified in the element
@@ -340,7 +340,7 @@ public class Catalina {
         digester.addSetProperties("Server/Service/Connector/Listener");
         digester.addSetNext("Server/Service/Connector/Listener",
                             "addLifecycleListener",
-                            "org.org.apache.catalina.LifecycleListener");
+                            "org.apache.catalina.LifecycleListener");
 
         // Add RuleSets for nested elements
         digester.addRuleSet(new NamingRuleSet("Server/GlobalNamingResources/"));
@@ -375,12 +375,12 @@ public class Catalina {
 
         // Configure the rules we need for shutting down
         digester.addObjectCreate("Server",
-                                 "org.org.apache.catalina.core.StandardServer",
+                                 "org.apache.catalina.core.StandardServer",
                                  "className");
         digester.addSetProperties("Server");
         digester.addSetNext("Server",
                             "setServer",
-                            "org.org.apache.catalina.Server");
+                            "org.apache.catalina.Server");
 
         return (digester);
 
@@ -455,7 +455,7 @@ public class Catalina {
             System.setProperty("catalina.useNaming", "false");
         } else {
             System.setProperty("catalina.useNaming", "true");
-            String value = "org.org.apache.naming";
+            String value = "org.apache.naming";
             String oldValue =
                 System.getProperty(javax.naming.Context.URL_PKG_PREFIXES);
             if (oldValue != null) {
@@ -467,7 +467,7 @@ public class Catalina {
             if (value == null) {
                 System.setProperty
                     (javax.naming.Context.INITIAL_CONTEXT_FACTORY,
-                     "org.org.apache.naming.java.javaURLContextFactory");
+                     "org.apache.naming.java.javaURLContextFactory");
             }
         }
 
@@ -480,7 +480,7 @@ public class Catalina {
             else
                 access = "sun.,";
             Security.setProperty("package.access",
-                access + "org.org.apache.catalina.,org.org.apache.jasper.");
+                access + "org.apache.catalina.,org.apache.jasper.");
             String definition = Security.getProperty("package.definition");
             if( definition != null && definition.length() > 0 )
                 definition += ",";
@@ -489,7 +489,7 @@ public class Catalina {
             Security.setProperty("package.definition",
                 // FIX ME package "javax." was removed to prevent HotSpot
                 // fatal internal errors
-                definition + "java.,org.org.apache.catalina.,org.org.apache.jasper.");
+                definition + "java.,org.apache.catalina.,org.apache.jasper.");
         }
 
         // Replace System.out and System.err with a custom PrintStream
@@ -596,7 +596,7 @@ public class Catalina {
     protected void usage() {
 
         System.out.println
-            ("usage: java org.org.apache.catalina.startup.Catalina"
+            ("usage: java org.apache.catalina.startup.Catalina"
              + " [ -config {pathname} ] [ -debug ]"
              + " [ -nonaming ] { start | stop }");
 

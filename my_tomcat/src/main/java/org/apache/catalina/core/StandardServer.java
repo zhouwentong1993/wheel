@@ -111,17 +111,17 @@ public final class StandardServer
      * be persisted because they are automatically calculated.
      */
     private static String exceptions[][] = {
-        { "org.org.apache.catalina.core.StandardContext", "available" },
-        { "org.org.apache.catalina.core.StandardContext", "configured" },
-        { "org.org.apache.catalina.core.StandardContext", "distributable" },
-        { "org.org.apache.catalina.core.StandardContext", "name" },
-        { "org.org.apache.catalina.core.StandardContext", "override" },
-        { "org.org.apache.catalina.core.StandardContext", "publicId" },
-        { "org.org.apache.catalina.core.StandardContext", "replaceWelcomeFiles" },
-        { "org.org.apache.catalina.core.StandardContext", "sessionTimeout" },
-        { "org.org.apache.catalina.core.StandardContext", "workDir" },
-        { "org.org.apache.catalina.session.StandardManager", "distributable" },
-        { "org.org.apache.catalina.session.StandardManager", "entropy" },
+        { "org.apache.catalina.core.StandardContext", "available" },
+        { "org.apache.catalina.core.StandardContext", "configured" },
+        { "org.apache.catalina.core.StandardContext", "distributable" },
+        { "org.apache.catalina.core.StandardContext", "name" },
+        { "org.apache.catalina.core.StandardContext", "override" },
+        { "org.apache.catalina.core.StandardContext", "publicId" },
+        { "org.apache.catalina.core.StandardContext", "replaceWelcomeFiles" },
+        { "org.apache.catalina.core.StandardContext", "sessionTimeout" },
+        { "org.apache.catalina.core.StandardContext", "workDir" },
+        { "org.apache.catalina.session.StandardManager", "distributable" },
+        { "org.apache.catalina.session.StandardManager", "entropy" },
     };
 
 
@@ -147,21 +147,21 @@ public final class StandardServer
      * automatically at startup time.
      */
     private static String skippables[] = {
-        "org.org.apache.catalina.authenticator.BasicAuthenticator",
-        "org.org.apache.catalina.authenticator.DigestAuthenticator",
-        "org.org.apache.catalina.authenticator.FormAuthenticator",
-        "org.org.apache.catalina.authenticator.NonLoginAuthenticator",
-        "org.org.apache.catalina.authenticator.SSLAuthenticator",
-        "org.org.apache.catalina.core.NamingContextListener",
-        "org.org.apache.catalina.core.StandardContextValve",
-        "org.org.apache.catalina.core.StandardEngineValve",
-        "org.org.apache.catalina.core.StandardHostValve",
-        "org.org.apache.catalina.startup.ContextConfig",
-        "org.org.apache.catalina.startup.EngineConfig",
-        "org.org.apache.catalina.startup.HostConfig",
-        "org.org.apache.catalina.valves.CertificatesValve",
-        "org.org.apache.catalina.valves.ErrorDispatcherValve",
-        "org.org.apache.catalina.valves.ErrorReportValve",
+        "org.apache.catalina.authenticator.BasicAuthenticator",
+        "org.apache.catalina.authenticator.DigestAuthenticator",
+        "org.apache.catalina.authenticator.FormAuthenticator",
+        "org.apache.catalina.authenticator.NonLoginAuthenticator",
+        "org.apache.catalina.authenticator.SSLAuthenticator",
+        "org.apache.catalina.core.NamingContextListener",
+        "org.apache.catalina.core.StandardContextValve",
+        "org.apache.catalina.core.StandardEngineValve",
+        "org.apache.catalina.core.StandardHostValve",
+        "org.apache.catalina.startup.ContextConfig",
+        "org.apache.catalina.startup.EngineConfig",
+        "org.apache.catalina.startup.HostConfig",
+        "org.apache.catalina.valves.CertificatesValve",
+        "org.apache.catalina.valves.ErrorDispatcherValve",
+        "org.apache.catalina.valves.ErrorReportValve",
     };
 
 
@@ -169,7 +169,7 @@ public final class StandardServer
      * ServerLifecycleListener classname.
      */
     private static String SERVER_LISTENER_CLASS_NAME =
-        "org.org.apache.catalina.mbeans.ServerLifecycleListener";
+        "org.apache.catalina.mbeans.ServerLifecycleListener";
 
 
     // ------------------------------------------------------------ Constructor
@@ -222,7 +222,7 @@ public final class StandardServer
      * Descriptive information about this Server implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardServer/1.0";
+        "org.apache.catalina.core.StandardServer/1.0";
 
 
     /**
@@ -812,7 +812,7 @@ public final class StandardServer
             (wloader.getDebug() != 0) ||
             (wloader.getDelegate() != false) ||
             !wloader.getLoaderClass().equals
-             ("org.org.apache.catalina.loader.WebappClassLoader")) {
+             ("org.apache.catalina.loader.WebappClassLoader")) {
             return (false);
         }
         return (true);

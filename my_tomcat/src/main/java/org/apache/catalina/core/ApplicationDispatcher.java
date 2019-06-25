@@ -221,7 +221,7 @@ final class ApplicationDispatcher
      * Descriptive information about this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.ApplicationDispatcher/1.0";
+        "org.apache.catalina.core.ApplicationDispatcher/1.0";
 
 
     /**
@@ -879,7 +879,7 @@ final class ApplicationDispatcher
         ServletRequest previous = null;
         ServletRequest current = outerRequest;
         while (current != null) {
-            if ("org.org.apache.catalina.servlets.InvokerHttpRequest".
+            if ("org.apache.catalina.servlets.InvokerHttpRequest".
                 equals(current.getClass().getName()))
                 break; // KLUDGE - Make nested RD.forward() using invoker work
             if (!(current instanceof ServletRequestWrapper))

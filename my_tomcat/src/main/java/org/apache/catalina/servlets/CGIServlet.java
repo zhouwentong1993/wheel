@@ -313,7 +313,7 @@ public class CGIServlet extends HttpServlet {
         String servletName = getServletConfig().getServletName();
         if (servletName == null)
             servletName = "";
-        if (servletName.startsWith("org.org.apache.catalina.INVOKER."))
+        if (servletName.startsWith("org.apache.catalina.INVOKER."))
             throw new UnavailableException
                 ("Cannot invoke CGIServlet through the invoker");
 

@@ -113,7 +113,7 @@ public class ErrorReportValve
      * The descriptive information related to this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.valves.ErrorReportValve/1.0";
+        "org.apache.catalina.valves.ErrorReportValve/1.0";
 
 
     /**

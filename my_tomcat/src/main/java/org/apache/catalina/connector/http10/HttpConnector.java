@@ -157,7 +157,7 @@ public final class HttpConnector
      * Descriptive information about this Connector implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.connector.http10.HttpConnector/1.0";
+        "org.apache.catalina.connector.http10.HttpConnector/1.0";
 
 
     /**

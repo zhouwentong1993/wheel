@@ -110,14 +110,14 @@ public class StandardEngine
      * The descriptive information string for this implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.core.StandardEngine/1.0";
+        "org.apache.catalina.core.StandardEngine/1.0";
 
 
     /**
      * The Java class name of the default Mapper class for this Container.
      */
     private String mapperClass =
-        "org.org.apache.catalina.core.StandardEngineMapper";
+        "org.apache.catalina.core.StandardEngineMapper";
 
 
     /**

@@ -84,7 +84,7 @@ import java.util.ArrayList;
  *
  * <p>The command line to execute the tool looks like:</p>
  * <pre>
- *   java -classpath $CLASSPATH org.org.apache.catalina.startup.Tool \
+ *   java -classpath $CLASSPATH org.apache.catalina.startup.Tool \
  *     ${options} ${classname} ${arguments}
  * </pre>
  *
@@ -317,7 +317,7 @@ public final class Tool {
      */
     private static void usage() {
 
-        log("Usage:  java org.org.apache.catalina.startup.Tool [<options>] <class> [<arguments>]");
+        log("Usage:  java org.apache.catalina.startup.Tool [<options>] <class> [<arguments>]");
 
     }
 

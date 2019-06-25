@@ -74,7 +74,7 @@ package org.apache.catalina.connector.http10;
 public final class Constants {
 
     public static final String Package =
-        "org.org.apache.catalina.connector.http10";
+        "org.apache.catalina.connector.http10";
     public static final int DEFAULT_CONNECTION_TIMEOUT = 30000;
 
 }

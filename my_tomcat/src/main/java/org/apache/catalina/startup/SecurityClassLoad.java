@@ -81,7 +81,7 @@ public final class SecurityClassLoad {
         if( System.getSecurityManager() == null )
             return;
 
-        String basePackage = "org.org.apache.catalina.";
+        String basePackage = "org.apache.catalina.";
         loader.loadClass
             (basePackage +
              "core.ApplicationContext$PrivilegedGetRequestDispatcher");

@@ -186,7 +186,7 @@ public class WebappLoader
      * The descriptive information about this Loader implementation.
      */
     private static final String info =
-        "org.org.apache.catalina.loader.WebappLoader/1.0";
+        "org.apache.catalina.loader.WebappLoader/1.0";
 
 
     /**
@@ -201,7 +201,7 @@ public class WebappLoader
      * loader implementation must be used.
      */
     private String loaderClass =
-        "org.org.apache.catalina.loader.WebappClassLoader";
+        "org.apache.catalina.loader.WebappClassLoader";
 
 
     /**

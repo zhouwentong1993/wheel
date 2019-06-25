@@ -29,7 +29,7 @@ final class HttpResponseImpl
      * Descriptive information about this Response implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.connector.http.HttpResponseImpl/1.0";
+        "org.apache.catalina.connector.http.HttpResponseImpl/1.0";
 
 
     /**

@@ -101,13 +101,13 @@ public class HostConfig
     /**
      * The Java class name of the Context configuration class we should use.
      */
-    protected String configClass = "org.org.apache.catalina.startup.ContextConfig";
+    protected String configClass = "org.apache.catalina.startup.ContextConfig";
 
 
     /**
      * The Java class name of the Context implementation we should use.
      */
-    protected String contextClass = "org.org.apache.catalina.core.StandardContext";
+    protected String contextClass = "org.apache.catalina.core.StandardContext";
 
 
     /**

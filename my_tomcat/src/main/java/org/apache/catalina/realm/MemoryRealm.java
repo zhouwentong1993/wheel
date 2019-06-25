@@ -113,7 +113,7 @@ public final class MemoryRealm
      * Descriptive information about this Realm implementation.
      */
     protected final String info =
-        "org.org.apache.catalina.realm.MemoryRealm/1.0";
+        "org.apache.catalina.realm.MemoryRealm/1.0";
 
 
     /**

@@ -98,7 +98,7 @@ public class HttpResponseBase
      * Descriptive information about this HttpResponse implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.connector.HttpResponseBase/1.0";
+        "org.apache.catalina.connector.HttpResponseBase/1.0";
 
 
     /**

@@ -141,7 +141,7 @@ public class StandardPipeline
     /**
      * Descriptive information about this implementation.
      */
-    protected String info = "org.org.apache.catalina.core.StandardPipeline/1.0";
+    protected String info = "org.apache.catalina.core.StandardPipeline/1.0";
 
 
     /**

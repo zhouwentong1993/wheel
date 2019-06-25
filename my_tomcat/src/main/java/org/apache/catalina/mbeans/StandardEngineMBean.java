@@ -73,7 +73,7 @@ import javax.management.RuntimeOperationsException;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.core.StandardEngine</code> component.</p>
+ * <code>org.apache.catalina.core.StandardEngine</code> component.</p>
  *
  * @author Craig R. McClanahan
  * @version $Revision: 1.8 $ $Date: 2002/03/08 22:01:08 $

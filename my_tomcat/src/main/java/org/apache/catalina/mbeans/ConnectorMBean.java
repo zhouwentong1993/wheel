@@ -70,7 +70,7 @@ import java.lang.reflect.Method;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.coyote.tomcat4.CoyoteConnector</code> component.</p>
+ * <code>org.apache.coyote.tomcat4.CoyoteConnector</code> component.</p>
  *
  * @author Amy Roh
  * @version $Revision: 1.4 $ $Date: 2002/05/02 02:03:15 $

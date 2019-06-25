@@ -67,12 +67,12 @@ package org.apache.catalina.core;
 
 public class Constants {
 
-    public static final String Package = "org.org.apache.catalina.core";
+    public static final String Package = "org.apache.catalina.core";
     public static final int MAJOR_VERSION = 2;
     public static final int MINOR_VERSION = 3;
 
     public static final String JSP_SERVLET_CLASS =
-        "org.org.apache.jasper.servlet.JspServlet";
+        "org.apache.jasper.servlet.JspServlet";
     public static final String JSP_SERVLET_NAME = "jsp";
 
 }

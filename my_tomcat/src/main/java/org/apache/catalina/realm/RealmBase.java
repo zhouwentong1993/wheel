@@ -120,7 +120,7 @@ public abstract class RealmBase
      * Descriptive information about this Realm implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.realm.RealmBase/1.0";
+        "org.apache.catalina.realm.RealmBase/1.0";
 
 
     /**

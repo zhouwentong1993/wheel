@@ -153,10 +153,10 @@ public class WebRuleSet extends RuleSetBase {
                          new SetDistributableRule(digester));
 
         digester.addObjectCreate(prefix + "web-app/ejb-local-ref",
-                                 "org.org.apache.catalina.deploy.ContextLocalEjb");
+                                 "org.apache.catalina.deploy.ContextLocalEjb");
         digester.addSetNext(prefix + "web-app/ejb-local-ref",
                             "addLocalEjb",
-                            "org.org.apache.catalina.deploy.ContextLocalEjb");
+                            "org.apache.catalina.deploy.ContextLocalEjb");
 
         digester.addCallMethod(prefix + "web-app/ejb-local-ref/description",
                                "setDescription", 0);
@@ -172,10 +172,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setHome", 0);
 
         digester.addObjectCreate(prefix + "web-app/ejb-ref",
-                                 "org.org.apache.catalina.deploy.ContextEjb");
+                                 "org.apache.catalina.deploy.ContextEjb");
         digester.addSetNext(prefix + "web-app/ejb-ref",
                             "addEjb",
-                            "org.org.apache.catalina.deploy.ContextEjb");
+                            "org.apache.catalina.deploy.ContextEjb");
 
         digester.addCallMethod(prefix + "web-app/ejb-ref/description",
                                "setDescription", 0);
@@ -191,10 +191,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setRemote", 0);
 
         digester.addObjectCreate(prefix + "web-app/env-entry",
-                                 "org.org.apache.catalina.deploy.ContextEnvironment");
+                                 "org.apache.catalina.deploy.ContextEnvironment");
         digester.addSetNext(prefix + "web-app/env-entry",
                             "addEnvironment",
-                            "org.org.apache.catalina.deploy.ContextEnvironment");
+                            "org.apache.catalina.deploy.ContextEnvironment");
 
         digester.addCallMethod(prefix + "web-app/env-entry/description",
                                "setDescription", 0);
@@ -206,10 +206,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setValue", 0);
 
         digester.addObjectCreate(prefix + "web-app/error-page",
-                                 "org.org.apache.catalina.deploy.ErrorPage");
+                                 "org.apache.catalina.deploy.ErrorPage");
         digester.addSetNext(prefix + "web-app/error-page",
                             "addErrorPage",
-                            "org.org.apache.catalina.deploy.ErrorPage");
+                            "org.apache.catalina.deploy.ErrorPage");
 
         digester.addCallMethod(prefix + "web-app/error-page/error-code",
                                "setErrorCode", 0);
@@ -219,10 +219,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setLocation", 0);
 
         digester.addObjectCreate(prefix + "web-app/filter",
-                                 "org.org.apache.catalina.deploy.FilterDef");
+                                 "org.apache.catalina.deploy.FilterDef");
         digester.addSetNext(prefix + "web-app/filter",
                             "addFilterDef",
-                            "org.org.apache.catalina.deploy.FilterDef");
+                            "org.apache.catalina.deploy.FilterDef");
 
         digester.addCallMethod(prefix + "web-app/filter/description",
                                "setDescription", 0);
@@ -245,10 +245,10 @@ public class WebRuleSet extends RuleSetBase {
                               1);
 
         digester.addObjectCreate(prefix + "web-app/filter-mapping",
-                                 "org.org.apache.catalina.deploy.FilterMap");
+                                 "org.apache.catalina.deploy.FilterMap");
         digester.addSetNext(prefix + "web-app/filter-mapping",
                             "addFilterMap",
-                            "org.org.apache.catalina.deploy.FilterMap");
+                            "org.apache.catalina.deploy.FilterMap");
 
         digester.addCallMethod(prefix + "web-app/filter-mapping/filter-name",
                                "setFilterName", 0);
@@ -261,10 +261,10 @@ public class WebRuleSet extends RuleSetBase {
                                "addApplicationListener", 0);
 
         digester.addObjectCreate(prefix + "web-app/login-config",
-                                 "org.org.apache.catalina.deploy.LoginConfig");
+                                 "org.apache.catalina.deploy.LoginConfig");
         digester.addSetNext(prefix + "web-app/login-config",
                             "setLoginConfig",
-                            "org.org.apache.catalina.deploy.LoginConfig");
+                            "org.apache.catalina.deploy.LoginConfig");
 
         digester.addCallMethod(prefix + "web-app/login-config/auth-method",
                                "setAuthMethod", 0);
@@ -286,10 +286,10 @@ public class WebRuleSet extends RuleSetBase {
         digester.addCallParam(prefix + "web-app/resource-env-ref/resource-env-ref-type", 1);
 
         digester.addObjectCreate(prefix + "web-app/resource-ref",
-                                 "org.org.apache.catalina.deploy.ContextResource");
+                                 "org.apache.catalina.deploy.ContextResource");
         digester.addSetNext(prefix + "web-app/resource-ref",
                             "addResource",
-                            "org.org.apache.catalina.deploy.ContextResource");
+                            "org.apache.catalina.deploy.ContextResource");
 
         digester.addCallMethod(prefix + "web-app/resource-ref/description",
                                "setDescription", 0);
@@ -303,10 +303,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setType", 0);
 
         digester.addObjectCreate(prefix + "web-app/security-constraint",
-                                 "org.org.apache.catalina.deploy.SecurityConstraint");
+                                 "org.apache.catalina.deploy.SecurityConstraint");
         digester.addSetNext(prefix + "web-app/security-constraint",
                             "addConstraint",
-                            "org.org.apache.catalina.deploy.SecurityConstraint");
+                            "org.apache.catalina.deploy.SecurityConstraint");
 
         digester.addRule(prefix + "web-app/security-constraint/auth-constraint",
                          new SetAuthConstraintRule(digester));
@@ -318,10 +318,10 @@ public class WebRuleSet extends RuleSetBase {
                                "setUserConstraint", 0);
 
         digester.addObjectCreate(prefix + "web-app/security-constraint/web-resource-collection",
-                                 "org.org.apache.catalina.deploy.SecurityCollection");
+                                 "org.apache.catalina.deploy.SecurityCollection");
         digester.addSetNext(prefix + "web-app/security-constraint/web-resource-collection",
                             "addCollection",
-                            "org.org.apache.catalina.deploy.SecurityCollection");
+                            "org.apache.catalina.deploy.SecurityCollection");
         digester.addCallMethod(prefix + "web-app/security-constraint/web-resource-collection/http-method",
                                "addMethod", 0);
         digester.addCallMethod(prefix + "web-app/security-constraint/web-resource-collection/url-pattern",
@@ -336,7 +336,7 @@ public class WebRuleSet extends RuleSetBase {
                          new WrapperCreateRule(digester));
         digester.addSetNext(prefix + "web-app/servlet",
                             "addChild",
-                            "org.org.apache.catalina.Container");
+                            "org.apache.catalina.Container");
 
         digester.addCallMethod(prefix + "web-app/servlet/init-param",
                                "addInitParameter", 2);
@@ -392,7 +392,7 @@ public class WebRuleSet extends RuleSetBase {
 /**
  * A Rule that calls the <code>setAuthConstraint(true)</code> method of
  * the top item on the stack, which must be of type
- * <code>org.org.apache.catalina.deploy.SecurityConstraint</code>.
+ * <code>org.apache.catalina.deploy.SecurityConstraint</code>.
  */
 
 final class SetAuthConstraintRule extends Rule {
@@ -414,7 +414,7 @@ final class SetAuthConstraintRule extends Rule {
 
 /**
  * Class that calls <code>setDistributable(true)</code> for the top object
- * on the stack, which must be a <code>org.org.apache.catalina.Context</code>.
+ * on the stack, which must be a <code>org.apache.catalina.Context</code>.
  */
 
 final class SetDistributableRule extends Rule {

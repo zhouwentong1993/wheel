@@ -65,7 +65,7 @@
 package org.apache.catalina.cluster;
 
 /**
- * Manifest constants for the <code>org.org.apache.catalina.cluster</code>
+ * Manifest constants for the <code>org.apache.catalina.cluster</code>
  * package.
  *
  * @author Bip Thelin
@@ -73,5 +73,5 @@ package org.apache.catalina.cluster;
  */
 
 public final class Constants {
-    public static final String Package = "org.org.apache.catalina.cluster";
+    public static final String Package = "org.apache.catalina.cluster";
 }

@@ -79,7 +79,7 @@ import java.util.Iterator;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.users.MemoryUserDatabase</code> component.</p>
+ * <code>org.apache.catalina.users.MemoryUserDatabase</code> component.</p>
  *
  * @author Craig R. McClanahan
  * @version $Revision: 1.4 $ $Date: 2002/02/10 03:20:17 $

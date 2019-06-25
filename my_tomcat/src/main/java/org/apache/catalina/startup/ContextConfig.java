@@ -310,7 +310,7 @@ public final class ContextConfig
         if (authenticators == null) {
             try {
                 authenticators = ResourceBundle.getBundle
-                    ("org.org.apache.catalina.startup.Authenticators");
+                    ("org.apache.catalina.startup.Authenticators");
             } catch (MissingResourceException e) {
                 log(sm.getString("contextConfig.authenticatorResources"), e);
                 ok = false;

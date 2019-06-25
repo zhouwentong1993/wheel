@@ -78,7 +78,7 @@ import java.util.Iterator;
 
 /**
  * <p>A <strong>ModelMBean</strong> implementation for the
- * <code>org.org.apache.catalina.Group</code> component.</p>
+ * <code>org.apache.catalina.Group</code> component.</p>
  *
  * @author Craig R. McClanahan
  * @version $Revision: 1.2 $ $Date: 2002/02/03 00:56:57 $

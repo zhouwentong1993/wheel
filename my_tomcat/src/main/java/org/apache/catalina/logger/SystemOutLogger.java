@@ -85,7 +85,7 @@ public class SystemOutLogger
      * The descriptive information about this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.logger.SystemOutLogger/1.0";
+        "org.apache.catalina.logger.SystemOutLogger/1.0";
 
 
     // --------------------------------------------------------- Public Methods

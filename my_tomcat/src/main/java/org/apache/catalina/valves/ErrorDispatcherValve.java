@@ -107,7 +107,7 @@ public class ErrorDispatcherValve
      * The descriptive information related to this implementation.
      */
     protected static final String info =
-        "org.org.apache.catalina.valves.ErrorDispatcherValve/1.0";
+        "org.apache.catalina.valves.ErrorDispatcherValve/1.0";
 
 
     /**
