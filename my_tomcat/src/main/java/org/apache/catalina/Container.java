@@ -3,6 +3,7 @@ package org.apache.catalina;
 
 import javax.naming.directory.DirContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
 
@@ -60,6 +61,7 @@ import java.io.IOException;
  */
 
 public interface Container {
+
 
 
     // ----------------------------------------------------- Manifest Constants

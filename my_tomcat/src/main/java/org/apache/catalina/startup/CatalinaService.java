@@ -96,8 +96,6 @@ import java.security.Security;
  */
 
 public class CatalinaService extends Catalina {
-
-
     // ----------------------------------------------------- Instance Variables
 
 
