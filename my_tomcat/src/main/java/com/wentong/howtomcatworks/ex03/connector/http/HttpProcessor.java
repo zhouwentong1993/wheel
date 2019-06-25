@@ -68,6 +68,7 @@ public class HttpProcessor {
     private void parseRequest(SocketInputStream input, OutputStream output)
             throws IOException, ServletException {
 
+
         // Parse the incoming request line
         // 解析请求行
         input.readRequestLine(httpRequestLine);

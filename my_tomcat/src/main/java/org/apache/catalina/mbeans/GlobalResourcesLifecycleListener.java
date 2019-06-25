@@ -68,6 +68,7 @@ import org.apache.catalina.*;
 import org.apache.commons.modeler.Registry;
 
 import javax.naming.*;
+import javax.naming.Context;
 import java.util.Iterator;
 
 

@@ -746,6 +746,11 @@ public class HttpResponseBase
     }
 
 
+    @Override
+    public void setCharacterEncoding(String charset) {
+
+    }
+
     /**
      * Set the content length (in bytes) for this Response.
      *

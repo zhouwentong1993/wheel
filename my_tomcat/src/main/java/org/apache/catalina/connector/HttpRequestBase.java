@@ -731,6 +731,26 @@ public class HttpRequestBase
 
     }
 
+    @Override
+    public int getRemotePort() {
+        return 0;
+    }
+
+    @Override
+    public String getLocalName() {
+        return null;
+    }
+
+    @Override
+    public String getLocalAddr() {
+        return null;
+    }
+
+    @Override
+    public int getLocalPort() {
+        return 0;
+    }
+
 
     /**
      * Was this request received on a secure connection?

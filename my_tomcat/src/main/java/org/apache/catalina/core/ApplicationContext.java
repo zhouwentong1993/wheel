@@ -390,6 +390,11 @@ public class ApplicationContext
     }
 
 
+    @Override
+    public String getContextPath() {
+        return null;
+    }
+
     /**
      * Return a <code>ServletContext</code> object that corresponds to a
      * specified URI on the server.  This method allows servlets to gain

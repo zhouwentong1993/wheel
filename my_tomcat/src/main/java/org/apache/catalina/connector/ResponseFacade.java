@@ -147,6 +147,11 @@ public class ResponseFacade implements ServletResponse {
         return response.getCharacterEncoding();
     }
 
+    @Override
+    public String getContentType() {
+        return response.getContentType();
+    }
+
 
     public ServletOutputStream getOutputStream()
         throws IOException {
@@ -174,6 +179,11 @@ public class ResponseFacade implements ServletResponse {
         if (isFinished())
             resp.setSuspended(true);
         return (writer);
+
+    }
+
+    @Override
+    public void setCharacterEncoding(String charset) {
 
     }
 

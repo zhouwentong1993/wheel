@@ -114,6 +114,11 @@ public final class ApplicationContextFacade
     // ------------------------------------------------- ServletContext Methods
 
 
+    @Override
+    public String getContextPath() {
+        return null;
+    }
+
     public ServletContext getContext(String uripath) {
         ServletContext theContext = context.getContext(uripath);
         if ((theContext != null) &&

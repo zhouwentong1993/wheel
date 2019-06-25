@@ -507,7 +507,7 @@ public class Embedded implements Lifecycle {
             connector = (Connector) clazz.newInstance();
 
             if (address != null) {
-                IntrospectionUtils.setProperty(connector, "address", 
+                IntrospectionUtils.setProperty(connector, "address",
                                                "" + address);
             }
             IntrospectionUtils.setProperty(connector, "port", "" + port);

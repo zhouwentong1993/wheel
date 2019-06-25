@@ -194,8 +194,30 @@ public class MappingRequest
     public Locale getLocale() { return null; }
     public Enumeration getLocales() { return null; }
     public String getProtocol() { return null; }
+    @Override
     public BufferedReader getReader() throws IOException { return null; }
     public String getRealPath(String path) { return null; }
+
+    @Override
+    public int getRemotePort() {
+        return 0;
+    }
+
+    @Override
+    public String getLocalName() {
+        return null;
+    }
+
+    @Override
+    public String getLocalAddr() {
+        return null;
+    }
+
+    @Override
+    public int getLocalPort() {
+        return 0;
+    }
+
     public String getRemoteAddr() { return null; }
     public String getRemoteHost() { return null; }
     public String getScheme() { return null; }
